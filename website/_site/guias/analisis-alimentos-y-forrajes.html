@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.54">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Análisis de alimentos y forrejes – LABORATORIO DE NUTRICIÓN ANIMAL</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../img/logo-unal-palmira2.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../img/logo-unal-palmira2.svg" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">LABORATORIO DE NUTRICIÓN ANIMAL</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-guías-laboratorio" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Guías laboratorio</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-guías-laboratorio">    
+        <li>
+    <a class="dropdown-item" href="../guias/analisis-alimentos-y-forrajes.html">
+ <span class="dropdown-text">Análisis de alimentos y forrejes</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../guias/guia-composicion-quimica-alimentos.html">
+ <span class="dropdown-text">Composición Química de los Alimentos</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://restec.com.co/" target="_blank"> 
+<span class="menu-text">App</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">En esta página</h2>
+   
+  <ul>
+  <li><a href="#protocolo-de-laboratorios" id="toc-protocolo-de-laboratorios" class="nav-link active" data-scroll-target="#protocolo-de-laboratorios">PROTOCOLO DE LABORATORIOS</a></li>
+  <li><a href="#análisis-de-alimentos-y-forrajes" id="toc-análisis-de-alimentos-y-forrajes" class="nav-link" data-scroll-target="#análisis-de-alimentos-y-forrajes">ANÁLISIS DE ALIMENTOS Y FORRAJES</a></li>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link" data-scroll-target="#introducción">INTRODUCCIÓN</a></li>
+  <li><a href="#generalidades-de-los-métodos-analíticos" id="toc-generalidades-de-los-métodos-analíticos" class="nav-link" data-scroll-target="#generalidades-de-los-métodos-analíticos">GENERALIDADES DE LOS MÉTODOS ANALÍTICOS</a>
+  <ul class="collapse">
+  <li><a href="#métodos-analíticos" id="toc-métodos-analíticos" class="nav-link" data-scroll-target="#métodos-analíticos">1. MÉTODOS ANALÍTICOS</a></li>
+  <li><a href="#errores-en-los-análisis-químicos" id="toc-errores-en-los-análisis-químicos" class="nav-link" data-scroll-target="#errores-en-los-análisis-químicos">2. ERRORES EN LOS ANÁLISIS QUÍMICOS</a></li>
+  <li><a href="#recolección-secado-y-molienda-de-muestras" id="toc-recolección-secado-y-molienda-de-muestras" class="nav-link" data-scroll-target="#recolección-secado-y-molienda-de-muestras">3. RECOLECCIÓN, SECADO Y MOLIENDA DE MUESTRAS</a></li>
+  </ul></li>
+  <li><a href="#análisis-de-laboratorio" id="toc-análisis-de-laboratorio" class="nav-link" data-scroll-target="#análisis-de-laboratorio">ANÁLISIS DE LABORATORIO</a>
+  <ul class="collapse">
+  <li><a href="#determinación-del-contenido-de-materia-seca" id="toc-determinación-del-contenido-de-materia-seca" class="nav-link" data-scroll-target="#determinación-del-contenido-de-materia-seca">1.0. DETERMINACIÓN DEL CONTENIDO DE MATERIA SECA</a>
+  <ul class="collapse">
+  <li><a href="#con-estufa-analítica-a-60-y-105c" id="toc-con-estufa-analítica-a-60-y-105c" class="nav-link" data-scroll-target="#con-estufa-analítica-a-60-y-105c">1.1 Con estufa analítica a 60° y 105°C</a></li>
+  </ul></li>
+  <li><a href="#liofilizacion" id="toc-liofilizacion" class="nav-link" data-scroll-target="#liofilizacion">2.0. LIOFILIZACION</a></li>
+  <li><a href="#determinación-del-contenido-en-cenizas" id="toc-determinación-del-contenido-en-cenizas" class="nav-link" data-scroll-target="#determinación-del-contenido-en-cenizas">3.0. DETERMINACIÓN DEL CONTENIDO EN CENIZAS</a>
+  <ul class="collapse">
+  <li><a href="#cenizas-totales" id="toc-cenizas-totales" class="nav-link" data-scroll-target="#cenizas-totales">3.1. CENIZAS TOTALES</a></li>
+  </ul></li>
+  <li><a href="#determinación-del-contenido-de-extracto-etéreo" id="toc-determinación-del-contenido-de-extracto-etéreo" class="nav-link" data-scroll-target="#determinación-del-contenido-de-extracto-etéreo">4.0. DETERMINACIÓN DEL CONTENIDO DE EXTRACTO ETÉREO</a>
+  <ul class="collapse">
+  <li><a href="#extracción-de-la-grasa-libre" id="toc-extracción-de-la-grasa-libre" class="nav-link" data-scroll-target="#extracción-de-la-grasa-libre">4.1. EXTRACCIÓN DE LA GRASA LIBRE</a></li>
+  <li><a href="#extracción-de-la-grasa-total" id="toc-extracción-de-la-grasa-total" class="nav-link" data-scroll-target="#extracción-de-la-grasa-total">4.2. EXTRACCIÓN DE LA GRASA TOTAL</a></li>
+  </ul></li>
+  <li><a href="#determinación-del-contenido-en-proteínas-brutas" id="toc-determinación-del-contenido-en-proteínas-brutas" class="nav-link" data-scroll-target="#determinación-del-contenido-en-proteínas-brutas">5.0. DETERMINACIÓN DEL CONTENIDO EN PROTEÍNAS BRUTAS</a></li>
+  <li><a href="#determinación-del-contenido-en-fibras" id="toc-determinación-del-contenido-en-fibras" class="nav-link" data-scroll-target="#determinación-del-contenido-en-fibras">6.0. DETERMINACIÓN DEL CONTENIDO EN FIBRAS</a>
+  <ul class="collapse">
+  <li><a href="#determinación-de-fibra-por-van-soest" id="toc-determinación-de-fibra-por-van-soest" class="nav-link" data-scroll-target="#determinación-de-fibra-por-van-soest">DETERMINACIÓN DE FIBRA POR VAN SOEST</a></li>
+  </ul></li>
+  <li><a href="#determinación-del-contenido-en-energía-bruta" id="toc-determinación-del-contenido-en-energía-bruta" class="nav-link" data-scroll-target="#determinación-del-contenido-en-energía-bruta">7.0. DETERMINACIÓN DEL CONTENIDO EN ENERGÍA BRUTA</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Análisis de alimentos y forrejes</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="protocolo-de-laboratorios" class="level1">
+<h1>PROTOCOLO DE LABORATORIOS</h1>
+<ul>
+<li><p><strong>PASCAL LETERME, I.A., Ph D /PROFESOR ASOCIADO</strong></p></li>
+<li><p><strong>FERNANDO ESTRADA, I.A. Esp / ANALISTA</strong></p></li>
+</ul>
+</section>
+<section id="análisis-de-alimentos-y-forrajes" class="level1">
+<h1>ANÁLISIS DE ALIMENTOS Y FORRAJES</h1>
+</section>
+<section id="introducción" class="level1">
+<h1>INTRODUCCIÓN</h1>
+<p>Algunos de los métodos utilizados para analizar alimentos destinados a la nutrición animal son técnicas basadas en un sistema desarrollado por dos investigadores alemanes, Henneberg y Stohmann, del centro de investigación de Weende. El llamado “Esquema de Weende” implica la estimación de los principales componentes de un alimento, utilizando métodos que permiten una medida razonable, rápida y aceptable de diferentes fracciones sin la necesidad de disponer de equipos sofisticados y costosos o de numerosos reactivos.</p>
+<p>Hoy en día se utiliza básicamente el mismo esquema para caracterizar las materias primas utilizadas en nutrición animal. La Tabla 1 detalla las diferentes fracciones analizadas. Sin embargo, esta caracterización tiene sus límites, especialmente en materia de nutrición de monogástricos pues, los datos obtenidos no permiten formular una dieta balanceada que cubre los requerimientos de los animales. En particular, se desconoce el perfil en aminoácidos de las proteínas brutas, los elementos que componen las cenizas, el perfil en ácidos grasos del extracto etéreo, el contenido real en fibras solubles e insolubles y los carbohidratos, especialmente el almidón y los azúcares que constituyen el extracto libre de nitrógeno.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Denominación</th>
+<th>Otra denominación</th>
+<th>Componentes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Proteína bruta</td>
+<td>Proteína cruda</td>
+<td>(Contenido en N) x 6.25</td>
+</tr>
+<tr class="even">
+<td>Cenizas totales</td>
+<td></td>
+<td>Elementos minerales</td>
+</tr>
+<tr class="odd">
+<td>Grasa bruta</td>
+<td>Extracto etéreo</td>
+<td>Fracción soluble en etéreo (sobre todo lípidos)</td>
+</tr>
+<tr class="even">
+<td>Fibra bruta</td>
+<td>Fibra de Weende</td>
+<td>Fracción indefinida e insoluble de fibras</td>
+</tr>
+<tr class="odd">
+<td>Extracto libre de N</td>
+<td>Carbohidratos</td>
+<td>100 – (% de los otros componentes)</td>
+</tr>
+</tbody>
+</table>
+<p>Sin embargo, la determinación completa de los alimentos requiere de equipos sofisticados y costosos, como un cromatógrafo para analizar los aminoácidos, cromatografía (GC, HPLC y TLC), espectrofotometría de masas, por ejemplo, que no se encuentran en todos los laboratorios de nutrición animal.</p>
+</section>
+<section id="generalidades-de-los-métodos-analíticos" class="level1">
+<h1>GENERALIDADES DE LOS MÉTODOS ANALÍTICOS</h1>
+<section id="métodos-analíticos" class="level2">
+<h2 class="anchored" data-anchor-id="métodos-analíticos">1. MÉTODOS ANALÍTICOS</h2>
+<p>La decisión de utilizar un método para analizar un alimento depende sobre todo de la precisión requerida. Lamentablemente, una alta precisión requiere casi siempre de una gran inversión en tiempo y medios. El método elegido representa generalmente un compromiso entre precisión y economía.</p>
+<p>Un segundo criterio de tipo económico es el número de muestras a analizar. Si este número es alto, se puede dedicar mucho tiempo a operaciones preliminares de preparación y arreglo. Si se trata de una o un número limitado de muestras, más vale utilizar un método muy sencillo. Para ayudar en la decisión del método a utilizar, se puede tomar en cuenta los criterios siguientes:</p>
+<p>• <strong>Precisión o repetibilidad:</strong> medida de la capacidad de reproducir un resultado entre determinaciones realizadas por la misma persona o un mismo laboratorio en condiciones idénticas de método y equipos.</p>
+<p>• <strong>Reproductibilidad:</strong> similar en principio a la precisión pero basado en la capacidad de reproducir el resultado por diferentes personas y/o laboratorios utilizando el mismo protocolo.</p>
+<p>• <strong>Exactitud:</strong> capacidad de medir lo que se espera medir. Ejemplo: el contenido en proteínas en lugar de los componentes nitrogenados o la grasa en lugar del extracto etéreo.</p>
+<p>• <strong>Sencillez de la operación:</strong> especialmente si se realiza con personas no capacitadas.</p>
+<p>• <strong>Economía:</strong> expresada en término de costo de reactivos, equipos, tiempo y mano de obra.</p>
+<p>• <strong>Rapidez:</strong> tiempo requerido para realizar un análisis. Es especialmente importante si se necesita un resultado para aceptar o no un lote de materia prima o para formular una dieta.</p>
+<p>• <strong>Sensibilidad:</strong> capacidad del método a detectar y cuantificar un componente presente en concentraciones muy bajas. Ejemplo: toxinas u oligo-elementos.</p>
+<p>• <strong>Especificidad:</strong> capacidad a detectar y cuantificar componentes en presencia de componentes similares.</p>
+<p>• <strong>Seguridad:</strong> muchos reactivos son peligrosos para la salud, corrosivos y/o inflamables. Se debe dar prioridad a los métodos que utilizan un mínimo de reactivos peligrosos.</p>
+<p>• <strong>Métodos aprobados:</strong> diferentes institutos nacionales o internacionales dan su aprobación después de que el método fue estudiado por laboratorios independientes que consideran que su sensibilidad, especificidad, reproductibilidad y repetibilidad son aceptables. El más conocido en materia de análisis de alimentos es el AOAC (Asociación of Official Analytical Chemists).</p>
+</section>
+<section id="errores-en-los-análisis-químicos" class="level2">
+<h2 class="anchored" data-anchor-id="errores-en-los-análisis-químicos">2. ERRORES EN LOS ANÁLISIS QUÍMICOS</h2>
+<p>Es imposible realizar un análisis químico que sea totalmente exento de errores o incertidumbres. Todo lo que se puede esperar es de minimizar estos errores y estimar el valor de manera aceptable.</p>
+<p>Cada determinación es afectada por una serie de incertidumbres que se combinan para dar valores diferentes (ver Figura 1). Nunca se puede eliminar totalmente las incertidumbres, de tal manera que el valor real siempre será desconocido. Sin embargo, se puede calcular los parámetros estadísticos que permiten conocer los límites entre los cuales el valor real se encuentra con una gran probabilidad. No es nada fácil estimar la confiabilidad de datos experimentales. Sin embargo, es importante conocer los límites de precisión de un análisis en un laboratorio porque los datos de calidad desconocida no tienen valor.</p>
+<p>No existe un método sencillo para determinar la confiabilidad de un análisis. Se puede hacer pruebas para detectar errores y se deben graduar los equipos y analizar muestras de referencia de composición conocida. Sin embargo, el experimentador deberá emitir su propio juicio sobre la calidad de los análisis de su laboratorio.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/exactitud-precision.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figura 1. Exactitud y precisión</figcaption>
+</figure>
+</div>
+<p>La precisión de una medida se determina por comparación entre los resultados de análisis repetidos. Lamentablemente, no es tan fácil obtener una estimación de la exactitud. Para determinar el último, es necesario conocer el valor real cuando es exactamente lo que se busca.</p>
+<p>Es tentador pensar que si se conoce el resultado con precisión, lo es también con exactitud. Se ilustra el peligro de esta hipótesis en la Figura 2 que detalla los resultados de un análisis de nitrógeno en clorhidrato de benzilthiourea y en ácido nicotínico. Los puntos indican los errores absolutos (valor real – valor de análisis) obtenidos por 4 personas. El analista 1 obtuvo una buena precisión y una buena exactitud. El analista 2 obtuvo una mala precisión pero una buena exactitud y el analista 3 el contrario. El cuarto analista trabajó muy mal (mala precisión y exactitud). Se encuentra muchas veces el peligroso ejemplo del analista 3: buena precisión que hace pensar que la exactitud es bueno pero no es el caso.</p>
+<p>Se pueden distinguir tres tipos de errores:</p>
+<p>• <strong>Error aleatorio (o indeterminado):</strong> es la suma de los pequeños errores que ocurren a cada nivel del análisis. Se estima por la precisión.</p>
+<p>• <strong>Error sistemático (o determinado):</strong> es la causa de la diferencia entre el promedio de un serie de datos y el valor real (Ej.: analistas 3 y 4 de la figura 2). Es responsable de valores demasiados altos o bajos de una serie de análisis. Tiene varios orígenes (v. más adelante).</p>
+<p>• <strong>Error evidente:</strong> se debe a un error importante de manipulación o de lectura. Cuando hay varias repeticiones, se detecta fácilmente y se descarta.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/error-absoluto.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figura 2. Error absoluto en el análisis de nitrógeno de 2 productos químicos por 4 analistas.</figcaption>
+</figure>
+</div>
+<p>Hay varias fuentes de errores sistemáticos:</p>
+<p>• <strong>Errores de equipos:</strong> si una pipeta o una bureta no da exactamente la cantidad de solución requerida, si algunos factores afectan equipos electrónicos, si el material tiene un defecto no detectado, etc. En general, se detecta cuando se gradúa el equipo.</p>
+<p>• <strong>Errores de método:</strong> algunas reacciones químicas pueden demorarse o no ser completas, algunos reactivos son inestables o la actividad de algunas enzimas es muy sensible a la temperatura o el pH. Un buen ejemplo es el del colorante utilizado para detectar el cambio de pH durante una titulación : en general, no cambian de color a pH 7, sino a un pH más alto (fenolftaleina : pH 8.3-10) o bajo (verde de bromocresol : 3.8- 5.4)</p>
+<p>• <strong>Errores personales:</strong> muchas medidas requieren de un juicio personal como la posición de una aguja entre dos graduaciones, color de una solución de titulación, etc). En general, son de tipo unidireccional: una persona sistemáticamente, va a leer un valor demasiado alto. Se debe al prejuicio y la subjetividad de la persona porque tienen una idea del resultado que deben obtener, les gustan resultados que terminan por 0 o 5 o los números pares, etc.</p>
+<p>Se puede detectar los errores sistemáticos de equipos y de personal. Los equipos deben ser graduados, se debe verificar sistemáticamente el resultado de una medida con una solución estándar o testigo y, por supuesto, se debe mantener bien el equipo. Del otro lado, se debe capacitar bien el personal, desarrollar protocolos rigurosos y precisos y verificar los cálculos.</p>
+</section>
+<section id="recolección-secado-y-molienda-de-muestras" class="level2">
+<h2 class="anchored" data-anchor-id="recolección-secado-y-molienda-de-muestras">3. RECOLECCIÓN, SECADO Y MOLIENDA DE MUESTRAS</h2>
+<p><strong>RECOLECCIÓN</strong></p>
+<p>Es una etapa esencial en un análisis pero, en muchos casos, descuidada. Un muestrario incorrecto afecta más el resultado del análisis que la imprecisión del análisis mismo.</p>
+<p>El procedimiento depende de lo que se requiere como resultado: un solo resultado de análisis, representativo de todo un lote, o el estudio de la homogeneidad de composición del lote, a diferentes niveles. Depende también del tipo de alimento, su forma de presentación (sólida o líquida, harina o gránulos, etc), el tipo de almacenamiento (silo, bolsas, etc) y de la cantidad disponible (350 gramos, 2 kilos, …).</p>
+<p>En todos los casos, se debe tener como objetivo <strong>la representatividad</strong> de la muestra. Por ejemplo, cuando se trabaja con materia que tiene partículas de diferentes tamaños, se debe tomar en cuenta los fenómenos de separación granulométrica dentro de un bulto o un silo y tomar muestras en el fondo, los bordes, el centro, etc. Si se trata de una mezcla de componentes líquidos, y sólidos, es indispensable mezclar de manera homogénea antes de tomar la(s) muestra(s). Si el lote es de gran tamaño, se debe tomar varias muestras y, luego, mezclarlas antes de tomar una muestra representativa. En este caso, se puede derramar la muestra sobre una superficie limpia y tomar la muestra a diferentes niveles. En el caso de una muestra líquida, se puede distribuirla en varios frascos y tomar un frasco al azar.</p>
+<p>En la toma de muestras de forrajes se debe tomar en cuenta que la composición varía mucho en función del estado de crecimiento de la planta y que cambia casi diariamente. Si se trata de un ensilaje, se debe tomar muestras a diferentes niveles y, sobre todo, si se encuentra una fracción líquida, tratar de tomar una muestra representativa, sin escurrir la fracción sólida. Si se trata de una planta completa o de sus hojas, se debe recordar que cada parte (hoja, tallo, etc) tiene una composición diferente. La toma de muestras de un pasto natural es lo más complicado en razón de la heterogeneidad de la flora. En este caso, se debe hacer un muestrario sistemático en función de un plan de distribución elaborado previamente.</p>
+<p>En todos los casos, es <strong>INDISPENSABLE</strong> conservar la(s) muestra(s) en bolsas de plástico cerradas herméticamente y en el frío: nevera en el caso de muestras secas (cereales, etc) y congelador en el caso de muestras frescas (forrajes). En efecto, la exposición al calor va cambiar el contenido en humedad y, en el caso de forrajes, la respiración va continuar, lo que va cambiar la composición de la muestra, especialmente en azúcares. Es también indispensable anotar el tipo de materia colectada, su origen y todo tipo de dato interesante para caracterizar la muestra (representatividad, presencia de hongos, etc). Esas indicaciones facilitan muchísimo el trabajo del analista.</p>
+<p><strong>SECADO</strong></p>
+<p>El tratamiento de muestras destinadas al análisis químico empieza por su secado y la determinación de su contenido en materia seca. El principio es el de eliminar el agua de la muestra con el fin de facilitar su molienda, conservación y expresar su composición en base seca (% de materia seca).</p>
+<p>Normalmente, se seca la muestra a 105 °C hasta obtener un peso constante. En función de la muestra, se demora de uno a tres días. Sin embargo, para muestras de bajo contenido en materia seca (plantas, etc), se secan primero a 40 ó 60 °C para evitar modificaciones en su composición química (reacción de Maillard, pérdidas por volatilización). En este caso, se debe secar en una estufa ventilada con recipientes de gran tamaño y remover la materia regularmente.</p>
+<p>En el caso de muestras biológicas frágiles, se pueden secar por <strong>LIOFILIZACIÓN</strong>. El principio es el de colocar una muestra congelada (-18°C) dentro de un recipiente a baja presión (&lt; 25 mm Hg.) en presencia de una placa metálica a baja temperatura (-50°C). El agua en la muestra va a sublimarse es decir, del estado sólido (hielo), pasa directamente a la forma de vapor (gas). Cuando las moléculas de agua evaporadas van a tocar el colector a baja temperatura, se condensan otra vez y se quedan sobre la pared.</p>
+<p><strong>MOLIENDA</strong></p>
+<p>La molienda es una etapa muy importante para la preparación de la muestra. Una molienda demasiada gruesa va a impedir una medida completa. Una demasiada fina será perjudicial al análisis de fibras, por ejemplo. Se debe evitar también que la muestra se caliente demasiado. Finalmente, la mayoría de las técnicas provocan una segregación entre las partículas gruesas y finas que tienen una composición diferente y hay que asegurarse que no hay pérdidas de elementos y que la muestra molida sea homogénea y representativa.</p>
+<p>Algunos alimentos como forrajes o alimentos fibrosos pueden necesitar una molienda inicial, con tijeras o un tipo de molino apropiado.</p>
+<p>Hay muchos tipos de molinos. La mayoría tiene como principio una serie de martillos o de cuchillos arrastrados por un rotor. La materia va desagregarse en contacto con los cuchillos o los martillos cuando hay impacto sobre las paredes. Es posible controlar el tamaño de las partículas gracias al tamaño del tamiz, de la malla de la rejilla (Ej. 1 mm, 0.2 mm, etc). En todos los casos, es necesario pensar en la manera de moler la muestra, teniendo en cuenta las posibles consecuencias sobre el resultado del análisis.</p>
+</section>
+</section>
+<section id="análisis-de-laboratorio" class="level1">
+<h1>ANÁLISIS DE LABORATORIO</h1>
+<section id="determinación-del-contenido-de-materia-seca" class="level2">
+<h2 class="anchored" data-anchor-id="determinación-del-contenido-de-materia-seca">1.0. DETERMINACIÓN DEL CONTENIDO DE MATERIA SECA</h2>
+<section id="con-estufa-analítica-a-60-y-105c" class="level3">
+<h3 class="anchored" data-anchor-id="con-estufa-analítica-a-60-y-105c">1.1 Con estufa analítica a 60° y 105°C</h3>
+<p><strong>Caso de un alimento húmedo</strong> (Ejemplo forraje)</p>
+<p>Para poder moler la muestra y analizarla, se debe secar inicialmente una temperatura de 60 °C, para impedir que la desecación afecte su composición química. Esta primera determinación se llama <u>Materia Seca Inicial</u> Sin embargo, esta temperatura no permite una desecación completa de la muestra. Una vez la muestra desecada y molida, se debe determinar de nuevo su contenido en materia seca. Esta segunda determinación se llama la <u>materia seca analítica</u>. Se utiliza para expresar los resultados en base seca.</p>
+<p><u>Material necesario</u></p>
+<p>• Papel periódico, bolsa de papel, bandeja de aluminio</p>
+<p>• Balanza de precisión (min: 5g max:16100g)</p>
+<p>• Marcador</p>
+<p><u>Procedimiento</u></p>
+<p>• Tomar una muestra (100-300 g) homogénea y representativa de la materia fresca a analizar, colocarla en un recipiente (aluminio, papel periódico, bolsa de papel) previamente tarado con la balanza de precisión.</p>
+<p>• Pesar el recipiente con la muestra y anotar el peso (Peso fresco)</p>
+<p>• Colocar el recipiente en la estufa a 60 °C por 24 h (hasta peso constante)</p>
+<p>• Sacar el recipiente y DEJAR QUE SE ENFRIE AL AIRE LIBRE durante dos horas</p>
+<p>• Pesarlo y calcular su contenido en materia seca, moler inmediatamente.</p>
+<p><span class="math display">\[
+\text{Materia seca inicial} = \left( \frac{(\text{Tara} + \text{Peso seco}) - \text{Tara}}{\text{Peso fresco}} \right) \times 100
+\]</span></p>
+<p><u>Determinación de la materia seca analítica</u></p>
+<p>Después de la molienda (se acepta que la molienda no afecta el contenido en agua de manera significativa):</p>
+<p>• Se pesa en una balanza analítica una muestra de 3 a 5g en un crisol de porcelana.</p>
+<p>• Se lleva a estufa de 105°C durante 12 horas</p>
+<p>• Se saca de la estufa y se lleva a desecador para dejar enfriar durante 1 hora</p>
+<p>• Se pesa nuevamente en balanza analítica y se calcula el contenido en materia seca analítica:</p>
+<p><span class="math display">\[
+\text{% Materia seca analítica} = \left( \frac{(\text{Tara} + \text{Peso de muestra seco}) - \text{Tara}}{\text{Peso de muestra a 60°C]}} \right) \times 100
+\]</span></p>
+<p><span class="math display">\[
+\text{% Materia seca total} = \frac{(\% \text{ materia seca a } 60 \, ^\circ C) \times (\% \text{ materia seca a } 105 \, ^\circ C)}{100}
+\]</span></p>
+<p><strong>AOAC</strong> (1990) Official Methods of Analysis of the Association of Official Analytical Chemists. 15th Ed., Arlington, Virginia, USA. METODO número AOAC 934.01)</p>
+</section>
+</section>
+<section id="liofilizacion" class="level2">
+<h2 class="anchored" data-anchor-id="liofilizacion">2.0. LIOFILIZACION</h2>
+<p><strong>Caso de una muestra húmeda por liofilización</strong></p>
+<p>Generalmente, se reserva la desecación por liofilización para las muestras frágiles, como carne o leche y las muestras biológicas (contenidos intestinales, plasma, etc). Como se trabaja en vacío, es preferible colocar una hoja de papel absorbente sobre el frasco, para impedir que el polvo entre en el aparato o, peor, en la bomba de vacío.</p>
+<p>Se debe considerar la desecación por liofilización como una desecación a 60°C. Es decir que será necesario realizar, después, una determinación de la materia seca analítica.</p>
+<p>La liofilización consiste en la desecación de material biológico por sublimación del agua (Figura 3)</p>
+<p>El principio se divide en tres etapas:</p>
+<p>• Etapa 1: congelación de la muestra</p>
+<p>• Etapa 2: baja de presión hacia la línea de sublimación</p>
+<p>• Etapa 3: secado de la muestra por sublimación</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/principio-liofilizacion.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figura 3. Principio de Liofilización basado en el diagrama de fases del agua</figcaption>
+</figure>
+</div>
+<p><u>Material necesario</u></p>
+<p>• Liofilizador</p>
+<p>• Congelador</p>
+<p>• Balanza de precisión</p>
+<p>• Frascos de plástico</p>
+<p>• Hojas de papel absorbente, elásticos</p>
+<p><u>Procedimiento</u></p>
+<p>• Colocar una muestra de la materia a analizar en un frasco previamente tarado, pesar con una balanza de precisión (g) y anotar el peso.</p>
+<p>• Congelar el frasco a – 18 °C durante al menos 24 h</p>
+<p>• Encender el equipo de congelación del liofilizador y esperar hasta que alcanza al menos –55°C</p>
+<p>• Colocar una hoja de papel sobre el frasco y colocarlo en la cámara en acrílico del liofilizador</p>
+<p>• Cerrar la cámara con la tapa y encender la bomba de vacío y esperar la desecación completa de la muestra (según el volumen, se puede demorar de 7 a 10 días)</p>
+<p>• Verificar que se obtiene el vacío</p>
+<p>• Colocar aire líquido sobre la muestra antes de colocarla en el liofilizador</p>
+<p>• Dejar entrar, con precaución, el aire en la cámara ANTES de apagar la bomba</p>
+<p>• Apagar la bomba</p>
+<p>• Apagar el equipo de congelación</p>
+<p>• Pesar el frasco, anotar el peso y calcular la cantidad de materia seca</p>
+<p>• Dejar descongelar el hielo y limpiar la cámara y el serpentín con papel</p>
+</section>
+<section id="determinación-del-contenido-en-cenizas" class="level2">
+<h2 class="anchored" data-anchor-id="determinación-del-contenido-en-cenizas">3.0. DETERMINACIÓN DEL CONTENIDO EN CENIZAS</h2>
+<p>Las cenizas representan la porción mineral, es decir inorgánica, del alimento. Es la parte que queda después de la eliminación del agua y de los componentes orgánicos por combustión, aunque parte de las cenizas sean de origen orgánico (S y P provenientes de proteínas). Además, parte de algunos minerales se pierden por volatilización (Na, Cl, K, P, S). Es también un método GRAVIMETRICO.</p>
+<p>El ideal es realizar la determinación directamente después de la determinación del contenido en materia seca pues, se necesita también desecar las muestras en crisoles de porcelana antes de quemarlas en la mufla.</p>
+<section id="cenizas-totales" class="level3">
+<h3 class="anchored" data-anchor-id="cenizas-totales">3.1. CENIZAS TOTALES</h3>
+<p><u>Material necesario</u></p>
+<p>• Mufla (hasta 600 °C)</p>
+<p>• Balanza analítica</p>
+<p>• Desecador</p>
+<p>• Crisoles en porcelana</p>
+<p><u>Procedimiento</u> (para muestras ya desecadas)</p>
+<p>• Colocar los crisoles con la materia seca, (es decir después de la desecación a 105 °C), en una mufla a 550-600 °C durante un mínimo de 6 h</p>
+<p>• Apagar la mufla, abrir la puerta y esperar 10 minutos</p>
+<p>• Colocar los crisoles con una pinza en un desecador. Dejar el grifo abierto 2 minutos.</p>
+<p>• Dejar enfriar durante al menos 1 h</p>
+<p>• Abrir con precaución el grifo hasta el equilibrio de aire, pesar los crisoles y anotar el peso (Tara + Cenizas)</p>
+<p>• Calcular el contenido en cenizas totales.</p>
+<p><span class="math display">\[
+\text{\% de cenizas totales} = \frac{(\text{Peso del crisol} + \text{Cenizas} - \text{Peso del crisol vacío})}{\text{Peso de muestra seca}} \times 100
+\]</span></p>
+<p><strong>AOAC</strong> (1990) Official Methods of Analysis of the Association of Official Analytical Chemists. 15th Ed., Arlington, Virginia, USA. METODO número 942.05</p>
+</section>
+</section>
+<section id="determinación-del-contenido-de-extracto-etéreo" class="level2">
+<h2 class="anchored" data-anchor-id="determinación-del-contenido-de-extracto-etéreo">4.0. DETERMINACIÓN DEL CONTENIDO DE EXTRACTO ETÉREO</h2>
+<p>El análisis de la composición de la grasa en los diferentes ácidos grasos no es determinante para la alimentación animal, con algunas excepciones (influencia sobre la calidad de la grasa de la leche, de la carne de pollo, etc). Generalmente, el conocimiento de la cantidad total de grasa es suficiente.</p>
+<p>Su determinación se basa en la propiedad de los lípidos de ser solubles en disolventes orgánicos apolares como el éter. Es un método GRAVIMETRICO que consiste en el aislamiento de la grasa por disolución en el disolvente. El último es eliminado por evaporación. Se extrae también todos los otros componentes solubles en disolventes apolares como los fosfolipidos, los esteroles, los pigmentos, algunas vitaminas, etc. Sin embargo, la grasa representa generalmente 99 % de la materia soluble, de tal manera que se puede considerar que el EXTRACTO ETEREO es un muy buen estimativo de la cantidad total de grasa presente en un alimento. Para extraer la grasa en continuo, se utiliza un aparato en vidrio llamado aparato de SOXHLET (Figura 4). En este caso, el extracto se realiza en frío. Se puede también trabajar con equipos especiales que permiten trabajar con disolvente caliente (Ej.: Soxtec, Büchi).</p>
+<p>El método Soxhlet permite extraer la grasa libre pero no la ligada a proteínas, etc. Para liberar la grasa ligada, se necesita realizar una hidrólisis ácida antes de extraer la grasa (numeral 4.2).</p>
+<p><strong>EXTRACCIÓN EN CONTINUO DE LA GRASA: MÉTODO DE SOXHLET</strong></p>
+<p>El aparato de Soxhlet se compone de tres partes en vidrio (Figura 4):</p>
+<p>• 1 balón de 250 ml</p>
+<p>• 1 extractor Soxhlet compuesto de una cámara y un sifón</p>
+<p>• 1 refrigerante</p>
+<p>Se coloca el disolvente en el balón y el dedal, conteniendo la muestra a analizar, en el extractor Soxhlet. Se calienta el balón hasta obtener la ebullición del disolvente. El último, en forma de gas, pasa por el sifón, alcanza el refrigerante, se condensa y se acumula en la cámara con la muestra. Cuando el nivel de disolvente, cargado de grasa, llega a la cima del sifón, todo el éter que se encuentra en el sifón de nuevo regresa al balón, a este paso se le denomina sifoneo. Se hierve el disolvente otra vez pero la grasa se queda en el balón. La extracción en continuo toma ± 4-6 h.</p>
+<section id="extracción-de-la-grasa-libre" class="level3">
+<h3 class="anchored" data-anchor-id="extracción-de-la-grasa-libre">4.1. EXTRACCIÓN DE LA GRASA LIBRE</h3>
+<p><u>Material necesario</u></p>
+<p>• Aparatos de Soxhlet completos</p>
+<p>• Placas de calefacción</p>
+<p>• Balanza analítica</p>
+<p>• Estufa a 105°C</p>
+<p>• Éter de petróleo o éter di etílico</p>
+<p>• Cartuchos de celulosa</p>
+<p>• Espátula</p>
+<p><u>Procedimiento</u></p>
+<p>• Pesar precisamente ± 5 g de muestra en un cartucho de celulosa</p>
+<p>• Colocar el cartucho en el extractor</p>
+<p>• Colocar ± 200ml de éter en el sifón, o la cantidad necesaria para que este no sifonee al momento de poner el cartucho.</p>
+<p>• Encender el equipo entre 130 a 180°C</p>
+<p>• Abrir el grifo de agua del refrigerante y encender las placas de calefacción</p>
+<p>• Hacer la extracción durante 6 a 8 h en función del tipo de alimento y la cantidad de grasa</p>
+<p>• Apagar las placas y desmontar el aparato cuando una cantidad máxima de éter se encuentra en el extractor. Quitar el cartucho y recuperar el éter en la botella.</p>
+<p>• Montar de nuevo el aparato, encender las placas hasta que la casi totalidad del éter se encuentra en el extractor (no esperar hasta que todo el éter se ha ido para evitar una explosión). Recuperar el éter en la botella.</p>
+<p>• Colocar el balón en una estufa a 105°C durante 1 h o una noche (dejar la puerta abierta durante 15 minutos para eliminar los vapores de éter)</p>
+<p>• Pasar el balón al desecador y dejar enfriar durante 1 hora</p>
+<p>• Pesar el balón (Tara + Extracto Etéreo)</p>
+<p>• Calcular extracto etéreo</p>
+<p><span class="math display">\[
+\text{\% de Extracto Etéreo en base seca} = \frac{(\text{Peso del balón} + \text{EE}) - \text{Peso de balón}}{\text{Peso de la muestra} \times \text{MSA}} \times 100
+\]</span></p>
+<p><strong>AOAC</strong> (1990) Official Methods of Analysis of the Association of Official Analytical Chemists. 15tEd., Arlington, Virginia, USA. METODO número 920.39</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/aparato-extraccion.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figura 4. Aparato de extracción de Soxhlet.</figcaption>
+</figure>
+</div>
+</section>
+<section id="extracción-de-la-grasa-total" class="level3">
+<h3 class="anchored" data-anchor-id="extracción-de-la-grasa-total">4.2. EXTRACCIÓN DE LA GRASA TOTAL</h3>
+<p>Un hidrólisis ácido es necesario para muestras de productos lácteos, carnes, alimentos ricos en grasa (harina de pescado, soya, etc), materias fecales y todos tipos de materias que pueden contener grasa ligada.</p>
+<p><u>Material necesario</u></p>
+<p>• Beakers de 500 ml y vidrio de reloj (o refrigerante adecuado)</p>
+<p>• Placas de calefacción</p>
+<p>• Balanza analítica</p>
+<p>• Solución de HCl 3 N ; Agua destilada</p>
+<p>• Embudos de 6-10 cm Ø</p>
+<p>• Filtros de papel</p>
+<p>• Bomba de vacío</p>
+<p>• Balanza analítica</p>
+<p><u>Procedimiento</u></p>
+<p>• Pesar precisamente en un beaker de 500 ml, ± 2.5 g de alimento (AL) seco</p>
+<p>• Agregar 100 ml de HCl 3 N y hervir durante 1 h bajo refrigerante o vidrio de reloj</p>
+<p>• Dejar enfriar y filtrar sobre doble papel filtro</p>
+<p>• Lavar abundantemente el residuo con agua destilada caliente hasta desaparición del ácido.</p>
+<p>• Desecar el filtro durante una noche a 105°C</p>
+<p>• Extraer la grasa por el método de Soxhlet y calcular la cantidad de grasa extraída.</p>
+</section>
+</section>
+<section id="determinación-del-contenido-en-proteínas-brutas" class="level2">
+<h2 class="anchored" data-anchor-id="determinación-del-contenido-en-proteínas-brutas">5.0. DETERMINACIÓN DEL CONTENIDO EN PROTEÍNAS BRUTAS</h2>
+<p>Las proteínas son polímeros de aminoácidos. Es el único macro nutriente que contiene Nitrógeno, lo que le distingue de la grasa y los carbohidratos. La presencia de nitrógeno en las proteínas es muchas veces utilizado para estimar la cantidad de proteína bruta en un alimento. Como se considera que las proteínas contienen, en promedio, 16 g N/100 g, se determina el contenido en nitrógeno y se multiplica el resultado por 6.25 (100/16). El método todavía más utilizado en el mundo es el método de Kjeldahl, del nombre del jefe de laboratorio de la cervecería Carlsberg (Copenhagen, Dinamarca) que publicó el protocolo de un método POR TITULACIÓN en 1883.</p>
+<p><strong>Principio del método</strong></p>
+<p><strong>1. Hidrólisis ácida:</strong> para convertir el nitrógeno primero en sulfato amónico (v. ecuación). La muestra sufre un tratamiento con ácido sulfúrico concentrado (96-98 %) durante una hora a 450 °C. El rendimiento se mejora en presencia de un catalizador. El tratamiento necesita un sistema de recuperación del vapor ácido para no alterar los equipos y contaminar el ambiente.</p>
+<p><span class="math display">\[
+\text{Materia orgánica} + \text{H}_2\text{SO}_4 \xrightarrow{450\,^\circ C + \text{catalizador}} \text{CO}_2 + \text{H}_2\text{O} + (\text{NH}_4)_2\text{SO}_4
+\]</span></p>
+<p><strong>2. Liberación del amoniaco por alcalinización y destilación al vapor:</strong> se va convertir el sulfato de amonio en amoniaco en forma gaseosa <span class="math inline">\((NH_3)\)</span> por calentamiento, en presencia de hidróxido de sodio y de vapor de agua, para recuperar el amoniaco</p>
+<p><span class="math display">\[
+(NH_4)_2SO_4 + 2:NaOH \rightarrow 2:NH_4OH + Na_2SO_4 \tag{1}
+\]</span> <span class="math display">\[
+NH_4OH \rightleftharpoons NH_3 + H_2O \tag{2}
+\]</span> <span class="math display">\[
+(NH_4)_2SO_4 + 2:NaOH \rightarrow Na_2SO_4 + 2:H_2O + 2:NH_3 \tag{3}
+\]</span></p>
+<p>El amoniaco producido se recupera en una solución que contiene un exceso de ácido bórico:</p>
+<p><span class="math display">\[
+NH_3 + H_3BO_3 \longrightarrow NH_4H_2BO_3
+\]</span></p>
+<p>Y es luego estimada por titulación del borato de amonio producido con un ácido, por Ej. <span class="math inline">\(H_2SO_4\)</span> 0.1N</p>
+<p><strong>3. Titulación del amoniaco:</strong></p>
+<p><span class="math display">\[
+NH_4H_2BO_3 + 2:HCl \longrightarrow NH_4Cl + H_3BO_3
+\]</span></p>
+<p>Se puede resumir las dos últimas ecuaciones de la manera siguiente:</p>
+<p><span class="math display">\[
+NH_3 + HCl \longrightarrow NH_4Cl
+\]</span></p>
+<p>A un mol de HCl corresponde 1 mol de N, es decir 14 g N</p>
+<p><span class="math display">\[
+1\ ml\ HCl\ 1\ N = 0.014g\ N = 14\ mg\ N
+\]</span> <span class="math display">\[
+1\ ml\ H_2SO_4\ 1\ N = 0.028\ g\ N = 28\ mg\ N
+\]</span></p>
+<p><strong>(Kjeldahl J (1883) Neue Methode zür Bestimmung der Stickstoffs in organischen Körpern. Z Anal Chem 22, 366-382)</strong></p>
+<p><u>Observaciones</u></p>
+<ol type="1">
+<li><p>El método de Kjeldahl es, todavía, el más utilizado en el mundo, aunque en disminución por razón de contaminación ambiental (catalizadores, ácidos concentrados). Se utiliza cada vez más el método por combustión, o método de Dumas, del nombre del investigador francés que le desarrolló en 1831. [Dumas J. (1831) Ann. Chim. Phys. (Paris) 47, 198]. Olvidado por más de un siglo, este método fue mejorado en los últimos años, gracias a la utilización de equipos modernos. El principio es el de calcinar la muestra y medir la producción de <span class="math inline">\(N_2\)</span>, producto final de la combustión.</p></li>
+<li><p>El coeficiente de conversión N/proteínas 6.25 corresponde al contenido en nitrógeno de la proteína de carne. En realidad, la mayoría de los alimentos tienen un contenido distinto y se debería utilizar un coeficiente diferente para cada uno de ellos, especialmente para los productos vegetales. En muchos casos, el coeficiente 6.25 es causa de una sobreestimación del contenido real en proteínas de los alimentos. Ejemplos:</p></li>
+</ol>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Alimento</th>
+<th>%N</th>
+<th>Coeficiente de conversión</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Carne</td>
+<td>16.00</td>
+<td>6.25</td>
+</tr>
+<tr class="even">
+<td>Leche</td>
+<td>15.66</td>
+<td>6.38</td>
+</tr>
+<tr class="odd">
+<td>Maíz</td>
+<td>17.70</td>
+<td>5.65</td>
+</tr>
+<tr class="even">
+<td>Trigo</td>
+<td>18.76</td>
+<td>5.33</td>
+</tr>
+<tr class="odd">
+<td>Arroz</td>
+<td>19.34</td>
+<td>5.17</td>
+</tr>
+</tbody>
+</table>
+<p><u>Materiales y equipo</u></p>
+<ul>
+<li>Balanza analítica</li>
+<li>Destilador</li>
+<li>Digestor</li>
+<li>Cámara de extracción</li>
+<li>Placa de agitación</li>
+<li>Magnetos</li>
+<li>Bureta</li>
+<li>Probeta de 30-50 ml</li>
+<li>Erlenmeyer 250 ml</li>
+<li>Tubos Büchi</li>
+<li>Pipetas</li>
+<li>Agua destilada</li>
+</ul>
+<p><u>Reactivos</u></p>
+<ul>
+<li>Ácido sulfúrico <span class="math inline">\(H_2SO_4\)</span> (96-98 %)</li>
+<li>Hidróxido de sodio NaOH (32%)</li>
+<li>Carbonato de sodio (<span class="math inline">\(NaCO_3\)</span>)</li>
+<li>Ácido bórico <span class="math inline">\(H_3BO_3\)</span> (2 %)</li>
+<li>Azul de timol</li>
+<li>Indicador mixto: se prepara con rojo de metilo y verde de bromocresol</li>
+<li>Catalizador</li>
+<li>Ácido clorhídrico <span class="math inline">\(H_2SO_4\)</span> 0.1 N</li>
+</ul>
+<p><strong>Nota:</strong></p>
+<p>La presentación del NaOH es:</p>
+<ul>
+<li>NaOH Al 32 % de pureza en forma líquida, ó</li>
+<li>NaOH granulado (99 % de pureza) en este caso, se prepara 1 litro de NaOH al 32 % de pureza = 320 g de NaOH, se disuelve en agua destilada y se completa 1 litro</li>
+</ul>
+<p><span class="math inline">\(H_3BO_3\)</span> al (99% de pureza) en este caso, se prepara 1 litro de <span class="math inline">\(H_3BO_3\)</span> al 2% de pureza = 20 g de <span class="math inline">\(H_3BO_3\)</span> se disuelve en agua destilada y se completa 1 litro.</p>
+<p><strong>Indicador Mixto:</strong></p>
+<ul>
+<li>Verde de bromocresol 0.60 g</li>
+<li>Rojo de metilo 0.40 g</li>
+</ul>
+<p>Disolución en etanol por separado, luego mezclarlos y llevarlos a volumen de 100 ml (1 litro)</p>
+<p><strong>Catalizador presentación:</strong></p>
+<ul>
+<li>Tabletas Kjeldahl</li>
+<li>En polvo: 0.05 g de óxido de selenio SeO + 2.5 g de sulfato de sodio <span class="math inline">\(Na_2SO_4\)</span> , se revuelve hasta homogeneizar (valor dado por muestra)</li>
+</ul>
+<p><u>Procedimiento</u></p>
+<p>Preparación de las soluciones: el ácido a utilizar es del 96 -98 % de pureza</p>
+<ol type="1">
+<li><strong>Digestión:</strong></li>
+</ol>
+<p>Se enciende el digestor 10 minutos antes de comenzar la digestión, colocando el regulador de potencia en posición 9.</p>
+<ul>
+<li>Se pesa 0.5 g de muestra, se envuelven en papel toalla y se introduce en el tubo de digestión, se le agregan 10 ml de <span class="math inline">\(H_2SO_4\)</span> 96-98 % + 1 tableta Kjeldahl y se coloca en digestión por 30 a 45 minutos, permitiendo temperaturas de hasta 450°C.</li>
+</ul>
+<p>Se retiran los tubos a una gradilla y se dejan enfriar media hora, aproximadamente.</p>
+<p>Encender el destilador de nitrógeno 15 minutos después de haber comenzado la digestión. Colocar en un tubo de digestión con 100 ml de agua destilada, simulando una destilación durante 5 minutos (precalentamiento).</p>
+<p>La digestión produce vapores perjudiciales. Estos se pueden eliminar por medio de unos filtros que se encuentran en la cámara de extracción, evitando así que estos vapores se disipen en el ambiente, también pueden ser absorbidos en agua por medio de un Scrubber conectado a las flautas del digestor. En nuestro caso los gases tóxicos provocados por la digestión son recuperados por el extractor de gases que los convierte en <span class="math inline">\(CO_2\)</span> y <span class="math inline">\(H_2O\)</span> que son eliminados con la ayuda de una cámara de extracción, por cañería (alcantarilla).</p>
+<ol start="2" type="1">
+<li><strong>Destilación:</strong></li>
+</ol>
+<ul>
+<li>Colocar el tubo con la muestra en el destilador.</li>
+<li>En un erlenmeyer se miden 30 ml de ácido bórico al 2% al cual ya se le ha adicionado el indicador mixto.</li>
+<li>Se lleva el erlenmeyer al destilador de nitrógeno por debajo del tubo de salida del destilado. Asegurarse que la punta del condensador está totalmente sumergido dentro del ácido bórico.</li>
+<li>Se programa el destilador para que adicione a la muestra NaOH al 32% (50 ml) y agua destilada (200 ml) durante 5 minutos.</li>
+</ul>
+<p>En la digestión del sulfato ácido de amonio por medio de un exceso de álcali fuerte se libera amoniaco, el cual se recoge por destilación sobre el ácido bórico que está en el erlenmeyer.</p>
+<ol start="3" type="1">
+<li><strong>Titulación:</strong></li>
+</ol>
+<ul>
+<li>Se lleva el erlenmeyer con la muestra para la titulación con la bureta.</li>
+</ul>
+<p>Titulación del borato de amonio formado con la solución de <span class="math inline">\(H_2SO_4\)</span> 0.1 N, usando como indicador rojo de metilo - verde bromocresol. La solución pasa de un color azul a un color rosado que tenía el ácido bórico con su respectivo indicador.</p>
+<p><strong>(AOAC (1990) Official Methods of Analysis of the Association of Official Analytical Chemists. 15tEd., Arlington, Virginia, USA. METODO número 976.05)</strong></p>
+<p><strong>Cálculo:</strong></p>
+<p><strong>NITRÓGENO EXPRESADO EN MATERIA SECA, TITULANDO CON H2SO4</strong></p>
+<ol type="a">
+<li><p>% N = ml <span class="math inline">\(H_2SO_4\)</span> corregidos gastados en el proceso de titulación X Normalidad del ácido X m-equivalentes de Nitrógeno X 100 / ( peso de la muestra X % de materia seca)</p></li>
+<li><p>m = equivalentes de Nitrógeno para H2SO4 = Peso molecular / 1000 = 14/ 1000 = 0.014</p></li>
+<li><p>Muestra blanco se gastó en la titulación 0.2 ml de H2SO4</p></li>
+<li><p>Mililitros de H2SO4 – 0.02 = mililitros de H2SO4 corregidos gastados en el proceso de titulación</p></li>
+<li><p>% de Proteína = % de Nitrógeno X 6.25 % para forrajes y concentrados</p></li>
+</ol>
+<p><strong>Ejemplo materia prima torta de soya, titulando con Ácido sulfúrico:</strong></p>
+<p>ml gastados en la titulación = 26.5 – 0.2 = 26.3 ml</p>
+<p>% de Nitrógeno expresado en Materia seca = 26.3 X 0.1 X 0.014 X 100 / 0.5 X 0.91 = 8.08 %</p>
+</section>
+<section id="determinación-del-contenido-en-fibras" class="level2">
+<h2 class="anchored" data-anchor-id="determinación-del-contenido-en-fibras">6.0. DETERMINACIÓN DEL CONTENIDO EN FIBRAS</h2>
+<p>Las fibras son los componentes de las paredes celulares de los vegetales. Se componen de dos clases de componentes: los carbohidratos y la lignina. Los primeros son polímeros de azúcares, moléculas de 5 o 6 átomos de carbono, en forma de anilla, que forman cadenas lineales o ramificadas, de tamaño variable. La proporción de H y de O en comparación con el C es de (C/H/O): 1/2/1 (C / <span class="math inline">\(H_{2}O\)</span>: Carbo-hidratos). La lignina es una asociación tridimensional de polímeros que tienen como unidades alcoholes con núcleos fenil-propanos.</p>
+<p>Existen dos métodos de laboratorio, por los cuales se puede determinar el contenido en fibras de un material:</p>
+<ul>
+<li>Fibra bruta o fibra de Weende (Método de Weende)</li>
+<li>Fibra Detergente Neutro (Método de Van Soest)</li>
+</ul>
+<section id="determinación-de-fibra-por-van-soest" class="level3">
+<h3 class="anchored" data-anchor-id="determinación-de-fibra-por-van-soest">DETERMINACIÓN DE FIBRA POR VAN SOEST</h3>
+<section id="determinación-con-beakers-y-crisoles" class="level4">
+<h4 class="anchored" data-anchor-id="determinación-con-beakers-y-crisoles">6.1 Determinación con beakers y crisoles</h4>
+<p><strong>Material y equipo.</strong></p>
+<ul>
+<li>Digestor de fibras</li>
+<li>Beaker de 1000 ml.</li>
+<li>Bomba de vacío</li>
+<li>Estufa de secado</li>
+<li>Crisoles de vidrio porosidad 2.0</li>
+<li>Mufla</li>
+<li>Desecador</li>
+<li>Balanza analítica</li>
+<li>Espátula</li>
+</ul>
+<p><strong>Reactivos.</strong></p>
+<ol type="a">
+<li><p>Solución Detergente Neutra (SDN). Agregar:</p>
+<p>30.0 g Sulfato de Lauril Sódico, 18.61 g EDTA (Ac. EtilenodiaminaTetracético); 6.81 g Tetraborato de Sodio Decahidratado; 4.56 g Fosfato Dibásico de Sodio Anhidro y 10 ml Glicol Etilénico Monoetileter (Etoxietanol). En un litro de Agua destilada. Agitar y calentar para facilitar la solubilidad. Verificar que el rango del pH se encuentre entre 6.9 – 7.1</p></li>
+<li><p>Acetona Usar un grado libre de color y no dejar residuos que eviten la evaporación.</p></li>
+</ol>
+<p><strong>PRECAUCIONES – SEGURIDAD</strong></p>
+<ol type="a">
+<li><p>la acetona es altamente flameable. Use careta o mascarilla, cuando la maneje y evite la inhalación o contacto con la piel.</p></li>
+<li><p>El Sulfato Lauril Sódico irrita las membranas mucosas. Use mascarilla y cubra las manos con guantes cuando maneje estos químicos.</p></li>
+</ol>
+<p><strong>Procedimiento.</strong></p>
+<p><strong>PROCEDIMIENTO</strong></p>
+<ol type="1">
+<li>Pesar 1g (± 0.05 g) de muestra seca, que ha sido molida a través de un tamiz de 1mm, y pasarla directamente al interior del beaker de 1000 ml.</li>
+<li>Distribuir la muestra uniformemente en el interior del beaker</li>
+<li>Agregar 200 ml de SDA (solución detergente ácida)</li>
+<li>Dejar en el digestor de fibras durante 1hora después que empiece a ebullir.</li>
+<li>Pasada la hora, filtrar en bomba de vacío, y recoger residuos en crisol de porosidad tipo 2 haciendo un lavado constante con agua hasta que no queden residuos de solución</li>
+<li>Hacer un último lavado con acetona para asegurar que no quede nada de solución</li>
+<li>Llevar a la estufa a 105 °C de 6 a 12 horas</li>
+<li>Llevar a desecador y dejar enfriar para pesar</li>
+</ol>
+<p><strong>CÁLCULOS</strong></p>
+<ol type="a">
+<li><p><strong>DETERMINACIÓN DE FIBRA DETERGENTE NEUTRA ANÁLISIS DE VAN SOEST</strong></p>
+<ul>
+<li>Peso de la muestra (g)</li>
+<li>Peso del crisol + peso del residuo de FDN (g)</li>
+<li>Peso del crisol + cenizas (g)</li>
+</ul></li>
+</ol>
+<p><strong>Formula:</strong></p>
+<p><span class="math display">\[ \text{\% FDN Base Seca} = \frac{[\text{(peso crisol + residuos FDN)} - \text{(peso crisol + cenizas)}]}{\text{Peso de la muestra} \times \text{% M.S.A}} \times 100 \]</span></p>
+<p><strong>AOAC</strong> (1990) Official Methods of Analysis of the Association of Official Analytical Chemists. 15<span class="math inline">\(^{\mathrm{a}}\)</span> ed., Arlington, Virginia, USA. METODO número 962.09</p>
+</section>
+<section id="método-para-la-determinación-de-la-fibra-detergente-ácidafda" class="level4">
+<h4 class="anchored" data-anchor-id="método-para-la-determinación-de-la-fibra-detergente-ácidafda">6.2 MÉTODO PARA LA DETERMINACIÓN DE LA FIBRA DETERGENTE ÁCIDA(FDA)</h4>
+<p><strong>REACTIVOS</strong></p>
+<ol type="a">
+<li><p>Solución Detergente Ácida (SDA). Agregar: 20 g Bromuro de amonio (CTAB) a 1L <span class="math inline">\(H_{2}SO_{4}\)</span> 1.0 N previamente estandarizado; calentar y agitar para ayudar la solución.</p></li>
+<li><p>Acetona: Usar un grado libre de color y no dejar residuos que eviten la evaporación.</p></li>
+</ol>
+<p><strong>PROCEDIMIENTO</strong></p>
+<ol type="1">
+<li>Tomar los residuos de FDN y pasarla al beaker de 1000 ml</li>
+<li>Agregar 200 ml de SDA (solución detergente ácida</li>
+<li>Dejar en el digestor de fibras durante 1hora después que empiece a ebullir.</li>
+<li>Pasada la hora, filtrar en bomba de vacío, y recoger residuos en crisol de porosidad tipo 2 haciendo un lavado constante con agua hasta que no queden residuos de solución</li>
+<li>Hacer un último lavado con acetona para asegurar que no quede nada de solución</li>
+<li>Llevar a la estufa a 105 °C de 6 a 12 horas</li>
+<li>Llevar a desecador y dejar enfriar para pesar</li>
+</ol>
+<p><strong>CÁLCULOS</strong></p>
+<p><strong>DETERMINACIÓN DE FIBRA DETERGENTE ACIDA ANÁLISIS DE VAN SOEST</strong></p>
+<ul>
+<li>Peso de la muestra (g)</li>
+<li>Peso del crisol +peso del residuo de FDN (g)</li>
+<li>Peso del crisol + cenizas (g)</li>
+</ul>
+<p><strong>Formula:</strong></p>
+<p><span class="math display">\[ \text{\% FDA Base Seca} = \frac{[\text{(peso crisol + residuos FDA)} - \text{(peso crisol + cenizas)}]}{\text{Peso de la muestra} \times \text{% M.S.A}} \times 100 \]</span></p>
+<p><strong>AOAC</strong> (1990) Official Methods of Analysis of the Association of Official Analytical Chemists. 15<span class="math inline">\(^{\mathrm{a}}\)</span> ed., Arlington, Virginia, USA. METODO número 962.09</p>
+</section>
+<section id="método-para-la-determinación-de-la-lignina-detergente-acida-en-beakers" class="level4">
+<h4 class="anchored" data-anchor-id="método-para-la-determinación-de-la-lignina-detergente-acida-en-beakers">6.3 MÉTODO PARA LA DETERMINACIÓN DE LA LIGNINA DETERGENTE ACIDA EN BEAKERS</h4>
+<p><strong>REACTIVOS</strong></p>
+<p><strong>Ácido Sulfúrico (72 %):</strong></p>
+<p>Se miden 742 ml de <span class="math inline">\(H_{2}SO_{4}\)</span> 97 % + agua destilada hasta completar 1 litro de solución = Ácido sulfúrico 72 %</p>
+<p><strong>PRECAUCIONES – SEGURIDAD</strong></p>
+<ol type="a">
+<li>El ácido sulfúrico es un reactivo corrosivo, que puede causar quemaduras, altamente peligroso para la salud humana si se llega ingerir o a manipular sin protección.</li>
+<li>Usar guantes de nitrilo y mascarilla cuando se maneje ácido sulfúrico. Agregue siempre ácido sulfúrico al agua. Si el ácido hace contacto con la piel, lavar con abundante cantidad de agua (ducha).</li>
+</ol>
+<p><strong>PROCEDIMIENTO</strong></p>
+<p>Después de la determinación de FDA, colocar las muestras secas dentro de un recipiente y agregar suficiente cantidad de <span class="math inline">\(H_{2}SO_{4}\)</span> 72% hasta cubrir las muestras.</p>
+<ol type="1">
+<li><strong>Importante:</strong> Las muestras deben estar completamente secas y a temperatura ambiente antes de adicionar el ácido concentrado. Si las muestras presentan humedad, el calor generado por la reacción de ácido sulfúrico y el agua, puede afectar los resultados (La muestra puede ser quemada).</li>
+<li>Agitar las muestras a intervalos de 30 minutos</li>
+<li>Después de haber estado la muestra en el ácido sulfúrico por 5 horas, enjuague con abundante agua para remover todo el ácido. Repita varias veces hasta que el pH sea neutro. Enjuague con 50 ml Aproximadamente de Acetona para remover el agua.</li>
+</ol>
+<p><strong>Advertencia:</strong> No colocar las muestras en el horno hasta que la acetona no se haya evaporadocompletamente.</p>
+<ol start="4" type="1">
+<li>Terminar secando en una estufa a 105 °C por 4 h. Retirar la muestra de la estufa, colocarlas directamente dentro del desecador.</li>
+</ol>
+<p><strong>CÁLCULOS</strong></p>
+<ul>
+<li>Peso de la muestra (g)</li>
+<li>Peso del crisol +peso del residuo de LDA (g)</li>
+<li>Peso del crisol + cenizas (g)</li>
+</ul>
+<p><strong>Formula:</strong></p>
+<p><span class="math display">\[ \text{\% Lignina Base Seca} = \frac{[\text{(peso crisol + residuos LDA)} - \text{(peso crisol + cenizas)}]}{\text{Peso de la muestra} \times \text{% M.S.}} \times 100 \]</span></p>
+<p><strong>AOAC</strong> (1990) Official Methods of Analysis of the Association of Official Analytical Chemists. 15tEd., Arlington, Virginia, USA. METODO número 973.18</p>
+<p><strong>Nota:</strong> Teniendo los valores de FDN, FDA, LDA, podemos estimar por diferencia los valores de hemicelulosa y celulosa de la siguiente manera:</p>
+<p><span class="math display">\[ \text{\% de Hemicelulosa} = \text{FDN} - \text{FDA} \]</span></p>
+<p><span class="math display">\[ \text{\% de Celulosa} = \text{FDA} - \text{Lignina} \]</span></p>
+</section>
+</section>
+</section>
+<section id="determinación-del-contenido-en-energía-bruta" class="level2">
+<h2 class="anchored" data-anchor-id="determinación-del-contenido-en-energía-bruta">7.0. DETERMINACIÓN DEL CONTENIDO EN ENERGÍA BRUTA</h2>
+<p>El principio de la técnica es el de quemar una muestra en una cámara de acero inoxidable (‘bomba’), rodeada por una cantidad precisa de agua y de medir el aumento de temperatura del agua. Después de una calibración con muestras de referencia, se puede deducir la cantidad de energía (expresada en calorías) producida por la combustión de la muestra. El resultado corresponde a la cantidad de <strong>energía bruta</strong> presente en la muestra.</p>
+<p>El aparato utilizado se llama un <strong>calorímetro</strong>. (ver <strong>Figura 5</strong>).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/calorimetro.jpg" class="img-fluid figure-img"></p>
+<figcaption>Figura 5. Calorímetro</figcaption>
+</figure>
+</div>
+<p><strong>Material necesario</strong></p>
+<ul>
+<li>bomba calorimétrica</li>
+<li>1 pipeta de oxígeno con sistema para llenar las bombas</li>
+<li>1 balanza analítica</li>
+<li>hilo (mecha)</li>
+<li>Crisoles de acero</li>
+<li>Agua destilada</li>
+</ul>
+<p><strong>Procedimiento para la operación de la bomba calorimétrica</strong></p>
+<ul>
+<li>Pesar 2000 g de agua destilada. La temperatura de la masa de agua debe oscilar entre 24 a 25.9 °C.</li>
+<li>Pesar 1g de muestra.</li>
+</ul>
+<p><strong>Armado de la cámara de combustión.</strong></p>
+<ul>
+<li>Poner la mecha en el alambre que une las dos clavijas que conducen la electricidad.</li>
+<li>Asegurarse que la mecha toque muestre al momento de montar el crisol con la muestra en el soporte.</li>
+<li>Cerrar la cámara de combustión y la válvula por donde circula el oxígeno.</li>
+<li>Conectar la manguera conductora de oxígeno (de la pipeta) a la válvula de la cámara de combustión.</li>
+<li>Llenar la cámara con oxígeno hasta 30 atmósferas.</li>
+<li>Desconectar la válvula de la manguera conductora de oxígeno.</li>
+</ul>
+<p><strong>Armado de la bomba calorimétrica.</strong></p>
+<ul>
+<li>Poner en la base de la camisa la cubeta con agua</li>
+<li>Ubicar la cámara de combustión dentro de la cubeta con agua. (utilizar la pinza de metal para esta operación).</li>
+<li>Conectar los electrodos.</li>
+<li>Cerrar la bomba calorimétrica.</li>
+<li>Asegurarse de que el termómetro no quede tocando la cubeta metálica, esto puede alterar el resultado de la prueba.</li>
+<li>Digitar los comandos en el equipo: Número de la bomba, identificación de la muestra, peso de la muestra, peso del coadyuvante (en caso de haber sido agregado).</li>
+<li>Esperar que el equipo homogenice la temperatura del agua inicial, luego suena una alarma (indica que hubo ignición de la muestra).</li>
+<li>Después de la quema de la muestra, esperar que el equipo homogenice la temperatura final.</li>
+<li>Tomar la temperatura final, el incremento de la temperatura y la Energía bruta (Cal/g)</li>
+</ul>
+<p><strong>ENERGÍA BRUTA.</strong></p>
+<p>La energía bruta de una materia, (para este caso, se determina con un calorímetro), constituye la cantidad de energía liberada después de la combustión de una muestra.</p>
+<p><strong>ASTME Standard Test Method for gross value.</strong> METODO ASTM número 144-64</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/poetic-cocada-cf108f\.netlify\.app");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Creado por Resilient Technologies S.A.S <a href="https://restec.com.co/">ResTec</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Código fuente en <a href="https://github.com/ResTec-Col/website-labunal-palmira">GitHub</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

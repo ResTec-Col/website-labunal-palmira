@@ -1,0 +1,51 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
+
+/* css styles */
+body{
+  text-align: justify;
+  font-family: "Liter", serif;
+  color: #2C3E50;
+}
+
+/* Barra navegación */
+.navbar {
+    background-color: #8D1717;
+    color: #545555;
+    height: 110px;
+    --bs-navbar-hover-color: #ED4251 !important; 
+}
+
+/* Pie de página */
+.nav-footer a {
+    color: #8D1717;
+}
+
+.navbar-brand img {
+    max-height: 120px;
+    margin-right: 1rem;
+  }
+
+.navbar .dropdown-item {
+    padding: .4rem .5rem;
+}
+
+/* Barra lateral TOC en documentos */
+.sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 1px solid #8d1717d9;
+    color: #8d1717d9 !important;
+}
+
+.sidebar nav[role=doc-toc] ul>li>a:hover,.sidebar nav[role=doc-toc] ul>li>ul>li>a:hover {
+    color: #8D1717 !important
+}
+
+/* subrayado de links */
+a {
+    color: #8d1717d9;
+    text-decoration: underline;
+    -webkit-text-decoration: underline;
+    -moz-text-decoration: underline;
+    -ms-text-decoration: underline;
+    -o-text-decoration: underline;
+}

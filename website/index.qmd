@@ -1,0 +1,13 @@
+---
+title: ""
+---
+
+<center> <h2> ¡Bienvenidos al Laboratorio de nutrición animal! </h2> </center>
+
+<center> <h3> Universidad Nacional de Colombia Sede Palmira </h3> </center>
+
+```{r, echo=FALSE, fig.align="center", out.height="350", out.width="275"}
+knitr::include_graphics("img/escudo-unal.jpg")
+```
+
+En esta página encontrarás las guías de laboratorio, manuales y demás prácticas llevadas a cabo en el laboratorio. Adicional se encuentra una aplicación web con la cual podrás interactuar con los datos tomados en campo de distintas muestras que podrían ser de interés en la formulación y suplementación de especies animales.

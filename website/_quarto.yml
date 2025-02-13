@@ -1,0 +1,30 @@
+project:
+  type: website
+
+website:
+  title: "LABORATORIO DE NUTRICIÓN ANIMAL"
+  favicon: img/logo-unal-palmira2.svg
+  navbar:
+    logo: img/logo-unal-palmira2.svg
+    left:
+      - href: index.qmd
+        text: Inicio
+      - text: Guías laboratorio
+        menu: 
+          - href: guias/analisis-alimentos-y-forrajes.qmd
+          - href: guias/guia-composicion-quimica-alimentos.qmd
+      - href: https://restec.com.co/
+        text: App
+        target: _blank
+        
+  page-footer: 
+    right: "Código fuente en <a href='https://github.com/ResTec-Col/website-labunal-palmira' target='_blank'>GitHub</a>"
+    left: "&copy; Creado por Laboratorio Nutrición UNAL Palmira y <a href='https://restec.com.co/' target='_blank'>Resilient Technologies S.A.S</a>"
+
+format:
+  html:
+    css: styles.css
+    lang: es
+
+
+
