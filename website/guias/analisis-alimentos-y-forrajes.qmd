@@ -1,5 +1,5 @@
 ---
-title: "Análisis de alimentos y forrejes"
+title: "Análisis de alimentos y forrajes"
 toc: true
 ---
 
