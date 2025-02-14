@@ -1,19 +1,34 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
 
-/* css styles */
-body{
-  text-align: justify;
-  font-family: "Liter", serif;
-  color: #2C3E50;
+/* Estilos generales del cuerpo */
+body {
+    text-align: justify;
+    font-family: "Liter", serif;
+    color: #2C3E50;
+    max-width: 100%;
+    overflow-x: hidden; /* Evita scroll horizontal */
 }
 
 /* Barra navegación */
 .navbar {
     background-color: #8D1717;
     color: #545555;
-    height: 110px;
-    --bs-navbar-hover-color: #ED4251 !important; 
+    min-height: 70px;
+    --bs-navbar-hover-color: #ED4251 !important;
+    padding: 0.5rem 1rem;
+}
+
+/* Logo en la barra de navegación */
+.navbar-brand img {
+    max-height: 70px;
+    margin-right: 1rem;
+    width: auto;
+}
+
+/* Elementos del menú desplegable */
+.navbar .dropdown-item {
+    padding: .4rem .5rem;
 }
 
 /* Pie de página */
@@ -21,26 +36,19 @@ body{
     color: #8D1717;
 }
 
-.navbar-brand img {
-    max-height: 120px;
-    margin-right: 1rem;
-  }
-
-.navbar .dropdown-item {
-    padding: .4rem .5rem;
-}
-
 /* Barra lateral TOC en documentos */
-.sidebar nav[role=doc-toc] ul>li>a.active, .sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+.sidebar nav[role=doc-toc] ul>li>a.active, 
+.sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
     border-left: 1px solid #8d1717d9;
     color: #8d1717d9 !important;
 }
 
-.sidebar nav[role=doc-toc] ul>li>a:hover,.sidebar nav[role=doc-toc] ul>li>ul>li>a:hover {
+.sidebar nav[role=doc-toc] ul>li>a:hover,
+.sidebar nav[role=doc-toc] ul>li>ul>li>a:hover {
     color: #8D1717 !important
 }
 
-/* subrayado de links */
+/* Estilos de enlaces */
 a {
     color: #8d1717d9;
     text-decoration: underline;
@@ -48,4 +56,58 @@ a {
     -moz-text-decoration: underline;
     -ms-text-decoration: underline;
     -o-text-decoration: underline;
+}
+
+/* AJUSTES RESPONSIVE PARA MÓVILES */
+@media screen and (max-width: 768px) {
+    /* Ajustes de la barra de navegación en móviles */
+    .navbar {
+        height: auto;
+    }
+    
+    .navbar-brand img {
+        max-height: 50px;
+    }
+    
+    .navbar-brand {
+        font-size: 1rem;
+        white-space: normal;
+        text-align: left;
+    }
+    
+    /* Estilos del menú desplegable en móviles */
+    .navbar .dropdown-menu {
+        background-color: #8D1717;
+        border: none;
+    }
+    
+    .navbar .dropdown-item {
+        color: white;
+        padding: 0.5rem 1rem;
+    }
+    
+    .navbar .dropdown-item:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+    
+    /* Ajustes de tipografía en móviles */
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    
+    /* Ajustes de márgenes en móviles */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }

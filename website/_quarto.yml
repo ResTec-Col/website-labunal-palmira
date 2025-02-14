@@ -3,17 +3,19 @@ project:
 
 website:
   title: "LABORATORIO DE NUTRICIÓN ANIMAL"
-  favicon: img/logo-unal-palmira2.svg
+  favicon: img/logo-unal.svg
   navbar:
-    logo: img/logo-unal-palmira2.svg
+    logo: img/UNAL_Logosimbolo.svg
     left:
       - href: index.qmd
         text: Inicio
       - text: Guías laboratorio
         menu: 
+          - href: data/plantilla.xlsx
+            text: Plantilla registro de datos (Excel)
           - href: guias/analisis-alimentos-y-forrajes.qmd
           - href: guias/guia-composicion-quimica-alimentos.qmd
-      - href: https://restec.com.co/
+      - href: https://app-labunal-palmira-1042514922887.us-central1.run.app
         text: App
         target: _blank
         
@@ -25,6 +27,10 @@ format:
   html:
     css: styles.css
     lang: es
+    
+    include-in-header:
+      text: |
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 
