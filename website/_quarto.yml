@@ -11,8 +11,10 @@ website:
         text: Inicio
       - text: Guías laboratorio
         menu: 
-          - href: data/plantilla.xlsx
-            text: Plantilla registro de datos (Excel)
+          - href: data/plantilla-especies.xlsx
+            text: Plantilla registro de especies (Excel)
+          - href: data/plantilla-subproductos.xlsx
+            text: Plantilla registro de subproductos (Excel)
           - href: guias/analisis-alimentos-y-forrajes.qmd
           - href: guias/guia-composicion-quimica-alimentos.qmd
       - href: https://app-labunal-palmira-1042514922887.us-central1.run.app
