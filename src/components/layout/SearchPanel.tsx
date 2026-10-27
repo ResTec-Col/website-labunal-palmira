@@ -75,7 +75,7 @@ export default function SearchPanel({ onCerrar }: SearchPanelProps) {
           aria-describedby={idEstado}
           className="fixed top-[8vh] left-1/2 z-50 flex max-h-[80vh] w-[calc(100vw-32px)] max-w-xl -translate-x-1/2 flex-col overflow-hidden rounded-lg border border-border bg-bg shadow-md"
         >
-          <div className="flex items-center gap-2 border-b border-border px-4">
+          <div className="flex items-center gap-2 border-b border-border px-4 has-[input:focus-visible]:outline-2 has-[input:focus-visible]:-outline-offset-2 has-[input:focus-visible]:outline-focus">
             <Search aria-hidden="true" className="size-5 shrink-0 text-text-subtle" />
             <Dialog.Title className="sr-only">Buscar en el sitio</Dialog.Title>
             <label htmlFor="busqueda-sitio" className="sr-only">
