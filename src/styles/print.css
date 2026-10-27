@@ -1,0 +1,73 @@
+@media print {
+  @page {
+    margin: 18mm 16mm;
+  }
+
+  :root {
+    color-scheme: light;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  .no-imprimir,
+  header[role="banner"],
+  footer[role="contentinfo"],
+  nav,
+  .skip-link {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+  }
+
+  .prose {
+    max-width: none;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #000000;
+  }
+
+  .prose a {
+    color: #000000;
+    text-decoration: underline;
+  }
+
+  .prose a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
+    word-break: break-all;
+  }
+
+  .prose h2,
+  .prose h3,
+  .prose h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .prose figure,
+  .prose table,
+  .prose pre,
+  .prose .katex-display {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .prose .tabla-contenedor,
+  .prose .katex-display {
+    overflow: visible !important;
+  }
+
+  .prose thead {
+    display: table-header-group;
+  }
+
+  .prose img {
+    max-width: 100% !important;
+  }
+}
