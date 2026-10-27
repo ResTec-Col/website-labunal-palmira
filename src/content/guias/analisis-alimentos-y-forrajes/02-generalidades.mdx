@@ -1,0 +1,101 @@
+---
+titulo: "Generalidades de los métodos analíticos"
+descripcion: "Criterios para elegir un método analítico, tipos de error en los análisis químicos y buenas prácticas de recolección, secado y molienda de las muestras."
+---
+
+import { Figure } from "../../../components/docs/mdx";
+import { imagenes as img } from "./imagenes";
+
+## 1. Métodos analíticos
+
+La decisión de utilizar un método para analizar un alimento depende sobre todo de la precisión requerida. Lamentablemente, una alta precisión requiere casi siempre de una gran inversión en tiempo y medios. El método elegido representa generalmente un compromiso entre precisión y economía.
+
+Un segundo criterio de tipo económico es el número de muestras a analizar. Si este número es alto, se puede dedicar mucho tiempo a operaciones preliminares de preparación y arreglo. Si se trata de una o un número limitado de muestras, más vale utilizar un método muy sencillo.
+
+Para ayudar en la decisión del método a utilizar, se puede tomar en cuenta los criterios siguientes:
+
+- **Precisión o repetibilidad:** medida de la capacidad de reproducir un resultado entre determinaciones realizadas por la misma persona o un mismo laboratorio en condiciones idénticas de método y equipos.
+
+- **Reproductibilidad:** similar en principio a la precisión pero basado en la capacidad de reproducir el resultado por diferentes personas y/o laboratorios utilizando el mismo protocolo.
+
+- **Exactitud:** capacidad de medir lo que se espera medir. Ejemplo: el contenido en proteínas en lugar de los componentes nitrogenados o la grasa en lugar del extracto etéreo.
+
+- **Sencillez de la operación:** especialmente si se realiza con personas no capacitadas.
+
+- **Economía:** expresada en término de costo de reactivos, equipos, tiempo y mano de obra.
+
+- **Rapidez:** tiempo requerido para realizar un análisis. Es especialmente importante si se necesita un resultado para aceptar o no un lote de materia prima o para formular una dieta.
+
+- **Sensibilidad:** capacidad del método a detectar y cuantificar un componente presente en concentraciones muy bajas. Ejemplo: toxinas u oligo-elementos.
+
+- **Especificidad:** capacidad a detectar y cuantificar componentes en presencia de componentes similares.
+
+- **Seguridad:** muchos reactivos son peligrosos para la salud, corrosivos y/o inflamables. Se debe dar prioridad a los métodos que utilizan un mínimo de reactivos peligrosos.
+
+- **Métodos aprobados:** diferentes institutos nacionales o internacionales dan su aprobación después de que el método fue estudiado por laboratorios independientes que consideran que su sensibilidad, especificidad, reproductibilidad y repetibilidad son aceptables. El más conocido en materia de análisis de alimentos es el AOAC (Asociación of Official Analytical Chemists).
+
+## 2. Errores en los análisis químicos
+
+Es imposible realizar un análisis químico que sea totalmente exento de errores o incertidumbres. Todo lo que se puede esperar es de minimizar estos errores y estimar el valor de manera aceptable.
+
+Cada determinación es afectada por una serie de incertidumbres que se combinan para dar valores diferentes (ver Figura 1). Nunca se puede eliminar totalmente las incertidumbres, de tal manera que el valor real siempre será desconocido. Sin embargo, se puede calcular los parámetros estadísticos que permiten conocer los límites entre los cuales el valor real se encuentra con una gran probabilidad.
+
+No es nada fácil estimar la confiabilidad de datos experimentales. Sin embargo, es importante conocer los límites de precisión de un análisis en un laboratorio porque los datos de calidad desconocida no tienen valor.
+
+No existe un método sencillo para determinar la confiabilidad de un análisis. Se puede hacer pruebas para detectar errores y se deben graduar los equipos y analizar muestras de referencia de composición conocida. Sin embargo, el experimentador deberá emitir su propio juicio sobre la calidad de los análisis de su laboratorio.
+
+<Figure src={img["exactitud-precision"]} alt={"Cuatro dianas con impactos que combinan exactitud y precisión buena o mala en cada caso."} caption={"Figura 1. Exactitud y precisión"} />
+
+La precisión de una medida se determina por comparación entre los resultados de análisis repetidos. Lamentablemente, no es tan fácil obtener una estimación de la exactitud. Para determinar el último, es necesario conocer el valor real cuando es exactamente lo que se busca.
+
+Es tentador pensar que si se conoce el resultado con precisión, lo es también con exactitud. Se ilustra el peligro de esta hipótesis en la Figura 2 que detalla los resultados de un análisis de nitrógeno en clorhidrato de benzilthiourea y en ácido nicotínico. Los puntos indican los errores absolutos (valor real – valor de análisis) obtenidos por 4 personas. El analista 1 obtuvo una buena precisión y una buena exactitud. El analista 2 obtuvo una mala precisión pero una buena exactitud y el analista 3 el contrario. El cuarto analista trabajó muy mal (mala precisión y exactitud). Se encuentra muchas veces el peligroso ejemplo del analista 3: buena precisión que hace pensar que la exactitud es bueno pero no es el caso.
+
+Se pueden distinguir tres tipos de errores:
+
+- **Error aleatorio (o indeterminado):** es la suma de los pequeños errores que ocurren a cada nivel del análisis. Se estima por la precisión.
+
+- **Error sistemático (o determinado):** es la causa de la diferencia entre el promedio de un serie de datos y el valor real (Ej.: analistas 3 y 4 de la figura 2). Es responsable de valores demasiados altos o bajos de una serie de análisis. Tiene varios orígenes (v. más adelante).
+
+- **Error evidente:** se debe a un error importante de manipulación o de lectura. Cuando hay varias repeticiones, se detecta fácilmente y se descarta.
+
+<Figure src={img["error-absoluto"]} alt={"Gráfico de puntos con los errores absolutos de cuatro analistas: dispersión y desplazamiento respecto al cero."} caption={"Figura 2. Error absoluto en el análisis de nitrógeno de 2 productos químicos por 4 analistas."} />
+
+Hay varias fuentes de errores sistemáticos:
+
+- **Errores de equipos:** si una pipeta o una bureta no da exactamente la cantidad de solución requerida, si algunos factores afectan equipos electrónicos, si el material tiene un defecto no detectado, etc. En general, se detecta cuando se gradúa el equipo.
+
+- **Errores de método:** algunas reacciones químicas pueden demorarse o no ser completas, algunos reactivos son inestables o la actividad de algunas enzimas es muy sensible a la temperatura o el pH. Un buen ejemplo es el del colorante utilizado para detectar el cambio de pH durante una titulación : en general, no cambian de color a pH 7, sino a un pH más alto (fenolftaleina : pH 8.3-10) o bajo (verde de bromocresol : 3.8- 5.4)
+
+- **Errores personales:** muchas medidas requieren de un juicio personal como la posición de una aguja entre dos graduaciones, color de una solución de titulación, etc). En general, son de tipo unidireccional: una persona sistemáticamente, va a leer un valor demasiado alto. Se debe al prejuicio y la subjetividad de la persona porque tienen una idea del resultado que deben obtener, les gustan resultados que terminan por 0 o 5 o los números pares, etc.
+
+Se puede detectar los errores sistemáticos de equipos y de personal. Los equipos deben ser graduados, se debe verificar sistemáticamente el resultado de una medida con una solución estándar o testigo y, por supuesto, se debe mantener bien el equipo. Del otro lado, se debe capacitar bien el personal, desarrollar protocolos rigurosos y precisos y verificar los cálculos.
+
+## 3. Recolección, secado y molienda de muestras
+
+### Recolección
+
+Es una etapa esencial en un análisis pero, en muchos casos, descuidada. Un muestrario incorrecto afecta más el resultado del análisis que la imprecisión del análisis mismo.
+
+El procedimiento depende de lo que se requiere como resultado: un solo resultado de análisis, representativo de todo un lote, o el estudio de la homogeneidad de composición del lote, a diferentes niveles. Depende también del tipo de alimento, su forma de presentación (sólida o líquida, harina o gránulos, etc), el tipo de almacenamiento (silo, bolsas, etc) y de la cantidad disponible (350 gramos, 2 kilos, …).
+
+En todos los casos, se debe tener como objetivo **la representatividad** de la muestra. Por ejemplo, cuando se trabaja con materia que tiene partículas de diferentes tamaños, se debe tomar en cuenta los fenómenos de separación granulométrica dentro de un bulto o un silo y tomar muestras en el fondo, los bordes, el centro, etc. Si se trata de una mezcla de componentes líquidos, y sólidos, es indispensable mezclar de manera homogénea antes de tomar la(s) muestra(s). Si el lote es de gran tamaño, se debe tomar varias muestras y, luego, mezclarlas antes de tomar una muestra representativa. En este caso, se puede derramar la muestra sobre una superficie limpia y tomar la muestra a diferentes niveles. En el caso de una muestra líquida, se puede distribuirla en varios frascos y tomar un frasco al azar.
+
+En la toma de muestras de forrajes se debe tomar en cuenta que la composición varía mucho en función del estado de crecimiento de la planta y que cambia casi diariamente. Si se trata de un ensilaje, se debe tomar muestras a diferentes niveles y, sobre todo, si se encuentra una fracción líquida, tratar de tomar una muestra representativa, sin escurrir la fracción sólida. Si se trata de una planta completa o de sus hojas, se debe recordar que cada parte (hoja, tallo, etc) tiene una composición diferente. La toma de muestras de un pasto natural es lo más complicado en razón de la heterogeneidad de la flora. En este caso, se debe hacer un muestrario sistemático en función de un plan de distribución elaborado previamente.
+
+En todos los casos, es **INDISPENSABLE** conservar la(s) muestra(s) en bolsas de plástico cerradas herméticamente y en el frío: nevera en el caso de muestras secas (cereales, etc) y congelador en el caso de muestras frescas (forrajes). En efecto, la exposición al calor va cambiar el contenido en humedad y, en el caso de forrajes, la respiración va continuar, lo que va cambiar la composición de la muestra, especialmente en azúcares. Es también indispensable anotar el tipo de materia colectada, su origen y todo tipo de dato interesante para caracterizar la muestra (representatividad, presencia de hongos, etc). Esas indicaciones facilitan muchísimo el trabajo del analista.
+
+### Secado
+
+El tratamiento de muestras destinadas al análisis químico empieza por su secado y la determinación de su contenido en materia seca. El principio es el de eliminar el agua de la muestra con el fin de facilitar su molienda, conservación y expresar su composición en base seca (% de materia seca).
+
+Normalmente, se seca la muestra a 105 °C hasta obtener un peso constante. En función de la muestra, se demora de uno a tres días. Sin embargo, para muestras de bajo contenido en materia seca (plantas, etc), se secan primero a 40 ó 60 °C para evitar modificaciones en su composición química (reacción de Maillard, pérdidas por volatilización). En este caso, se debe secar en una estufa ventilada con recipientes de gran tamaño y remover la materia regularmente.
+
+En el caso de muestras biológicas frágiles, se pueden secar por **LIOFILIZACIÓN**. El principio es el de colocar una muestra congelada (-18°C) dentro de un recipiente a baja presión (\< 25 mm Hg.) en presencia de una placa metálica a baja temperatura (-50°C). El agua en la muestra va a sublimarse es decir, del estado sólido (hielo), pasa directamente a la forma de vapor (gas). Cuando las moléculas de agua evaporadas van a tocar el colector a baja temperatura, se condensan otra vez y se quedan sobre la pared.
+
+### Molienda
+
+La molienda es una etapa muy importante para la preparación de la muestra. Una molienda demasiada gruesa va a impedir una medida completa. Una demasiada fina será perjudicial al análisis de fibras, por ejemplo. Se debe evitar también que la muestra se caliente demasiado. Finalmente, la mayoría de las técnicas provocan una segregación entre las partículas gruesas y finas que tienen una composición diferente y hay que asegurarse que no hay pérdidas de elementos y que la muestra molida sea homogénea y representativa.
+
+Algunos alimentos como forrajes o alimentos fibrosos pueden necesitar una molienda inicial, con tijeras o un tipo de molino apropiado.
+
+Hay muchos tipos de molinos. La mayoría tiene como principio una serie de martillos o de cuchillos arrastrados por un rotor. La materia va desagregarse en contacto con los cuchillos o los martillos cuando hay impacto sobre las paredes. Es posible controlar el tamaño de las partículas gracias al tamaño del tamiz, de la malla de la rejilla (Ej. 1 mm, 0.2 mm, etc). En todos los casos, es necesario pensar en la manera de moler la muestra, teniendo en cuenta las posibles consecuencias sobre el resultado del análisis.

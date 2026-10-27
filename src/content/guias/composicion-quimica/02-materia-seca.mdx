@@ -1,0 +1,67 @@
+---
+titulo: "Materia seca"
+descripcion: "Importancia de la materia seca en nutrición animal, secado inicial a 60 °C y analítico a 105 °C, y cálculo de la materia seca total de varias materias primas."
+---
+
+import { DataTable, Formula } from "../../../components/docs/mdx";
+
+La determinación del contenido de Materia Seca es muy importante en nutrición animal, dado que en esta se encuentran todos los nutrientes. La determinación de los diferentes nutrientes a nivel de Laboratorio se realizará en la materia seca, por lo que todas las muestras deben ser secadas para conocer su contenido de humedad. Y los valores generados de los diferentes nutrientes serán expresados en porcentaje de la MS, por ejemplo, si se determina que el pasto estrella tiene un contenido de tiene un contenido de MS de 35%, esto indica que en:
+
+- 100 g de FV hay 35 g de MS, o en 100 kg de FV hay 35 kg de MS.
+
+Y si se dice que la proteína cruda es 10 % y las cenizas (minerales) son 11 %, esto indica que:
+
+- En 100 g de MS hay 10 g de proteína cruda, o en 100 kg de MS hay 10 kg de proteína cruda.
+- En 100 g de MS hay 11 g de cenizas, o en 100 kg de MS hay 11 g de cenizas.
+
+La importancia de la MS en Nutrición Animal igualmente se debe a que los consumos por parte del animal de una dieta, forraje o alimento siempre se estiman en kg de MS, para luego con la información del contenido de MS de estos se estime cuanto sería en base fresca (cuantos kg debo suministrar (pesar) de la dieta, el forraje o alimento.
+
+## Métodos de análisis
+
+Existen diferentes métodos de secado según el contenido de humedad de la muestra a analizar (Leterme y Estrada, 2010). Aunque existen diferentes métodos de secado, actualmente en el laboratorio de Nutrición Animal, se está realizando en estufa analítica ([Anexo 1](/guias/composicion-quimica/anexo-1-materia-seca/): determinación de MS inicial y analítica).
+
+Las muestras con alto contenido de humedad deben secarse inicialmente a bajas temperaturas (40-60°C) para eliminar un gran contenido de esta, sin que se afecte su composición química, es decir, sin que los nutrientes presentes en esta, se dañen, igualmente deben ser secadas para lograr ser molidas a talla de partícula de 1 mm, para posteriores análisis de nutrientes. La reacción de pardeamiento que se produce por interacción entre los aminoácidos y los azúcares reductores, libera agua durante la deshidratación y se acelera a temperaturas elevadas. Los alimentos ricos en proteínas y azúcares reductores deben, por ello, desecarse con precaución, de preferencia en una estufa de vacío a 60°C. (Hart, 1991).
+
+El secado a estas temperaturas evita pérdidas sensibles de carbohidratos solubles y formación de complejos indigestibles proteína-carbohidratos. La formación de proteínas insolubles y productos de Maillard incrementa con la temperatura (Van Soest, 1994).
+
+La determinación de secado en estufa se basa en la pérdida de peso de la muestra por evaporación del agua. El principio operacional del método de determinación de humedad utilizando estufa y balanza analíticas, desecadores, incluye la preparación de la muestra, pesado, secado, enfriado y pesado nuevamente de la muestra. (Leterme y Estrada, 2010).
+
+El agua en los tejidos vegetales y animales, puede decirse que existe en dos formas generales: "agua libre” Y “agua ligada”. El agua libre o absorbida, que es la forma predominante, se libera con gran facilidad. El agua ligada a las proteínas y a las moléculas de sacáridos y absorbida sobre la superficie de las partículas coloidales. (Hart, 1991). El secado de la muestra a 60°C, solo logra sacar el agua libre que es aproximadamente un 90%, por lo que la muestra quedara con un contenido de agua de 10%, que corresponde al agua ligada.
+
+Después de este secado inicial la muestra puede ser molida a un tamaño de partícula de 1 mm, tamaño que se requiere para la determinación de otros análisis, como proteína cruda, extracto etéreo, etc.
+
+La determinación de la Materia Seca a 60°C es lo que se conoce como Materia Seca Inicial ([anexo 1](/guias/composicion-quimica/anexo-1-materia-seca/)).
+
+Para lograr sacar el contenido de agua ligada de la muestra, se debe llevar una parte (aproximadamente 5 g) de la muestra secada a 60°C a temperaturas más altas, a 105°C, es lo que conocemos como determinación de Materia Seca Analítica, la cual se utilizara como un factor de corrección para la materia seca inicial y de esta manera conocer el contenido total de materia seca de la muestra, como se indica a continuación:
+
+<Formula>
+
+$$
+MS_{total} = \frac{MS_i \times MS_a}{100}
+$$
+
+</Formula>
+
+En la tabla 3, se presentan ejemplos de valores de Materia Seca inicial, Materia Seca Analítica y Materia Seca Total de varias materias primas utilizadas en alimentación animal.
+
+<DataTable caption={"Tabla 3. Determinaciones de MS inicial y analitica¹, estimación de MS total de algunas materias primas utilizadas para alimentación animal"}>
+
+Alimentos | Materia Seca Inicial (%) | Materia Seca Analítica (%) | Materia Seca Total (%)
+------------- | ------------- | ------------- | -------------
+Leucaena leucocephala | 25.8 | 93.4 | 24.9
+Guinea Panicum maximum | 21.8 | 95.5 | 20.8
+Brachiaria Decumbens | 24.3 | 95.7 | 23.2
+Puntero Hyparrhenia rufa | 33.7 | 93.0 | 32.4
+Kikuyo Pennisetum clandestinum | 15.3 | 94.1 | 14.4
+Semillas de Girasol | --- | 93.0 | 93.0
+Maíz amarillo (grano) | --- | 88.3 | 88.3
+Torta de Soya² | --- | 87.8 | 87.8
+Harina de pescado² | --- | 91.7 | 91.7
+
+¹Información generada en el laboratorio de Nutrición Animal, por estudiantes de la asignatura de Nutrición Animal Básica. ²Sauvant et al., 2002. (---) No es necesario realizar esta determinación, pues su bajo contenido de humedad permite la molienda.
+
+</DataTable>
+
+Las materias primas con un bajo contenido de agua, como por ejemplo la torta se soya o las semillas de girasol, pueden ser llevadas directamente a molienda, y se les determina el contenido de materia seca, llevando una muestra (5 g) de estas a 105°C, temperatura que logra sacar el 100% de la humedad y directamente se encontraría su valor total de materia seca.
+
+Si solo se necesita conocer el valor de materia seca de un forraje o una materia prima rica en agua, como las frutas, es decir, no se necesita realizar análisis de sus nutrientes, la muestra rica en agua, puede ser llevada directamente a 105°C para la determinación de su materia seca, es decir no se necesita realizar la MS Inicial, que solo se realiza para muestras con altos contenidos de humedad (agua).

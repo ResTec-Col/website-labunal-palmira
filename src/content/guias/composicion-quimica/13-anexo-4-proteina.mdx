@@ -1,0 +1,118 @@
+---
+titulo: "Anexo 4. Determinación de proteína cruda"
+descripcion: "Material, reactivos y etapas de digestión, destilación y titulación del método Kjeldahl, con el cálculo del nitrógeno y de la proteína cruda en un ejemplo."
+---
+
+import { Figure, Formula } from "../../../components/docs/mdx";
+import { imagenes as img } from "./imagenes";
+
+Las proteínas son polímeros de aminoácidos. Es el único macro nutriente que contiene Nitrógeno, lo que le distingue de la grasa y los carbohidratos. La presencia de nitrógeno en las proteínas es muchas veces utilizada para estimar la cantidad de proteína bruta en un alimento. Como se considera que las proteínas contienen en promedio 16g N/100g, se determina el contenido en nitrógeno y se multiplica el resultado por 6.25 (100/16). El método todavía más utilizado en el mundo es el método de Kjeldahl.
+
+## Material necesario
+
+- Balanza de precisión
+- Destilador
+- Digestor Büchi
+- Extractor de gases Büchi
+- Bureta
+- Probeta de 30-50 ml
+- Erlenmeyer 250 ml
+- Tubos Büchi
+- Pipetas
+- Agua destilada
+
+## Reactivos
+
+- Ácido sulfúrico H₂SO₄ (96-98%)
+- Hidróxido de sodio NaOH (32%)
+- Carbonato de sodio Na₂CO₃
+- Ácido bórico H₃BO₃ (2%)
+- Azul de timol
+- Indicador mixto: se prepara con rojo de metilo 0.40g y verde de bromocresol 0.60g. Disolución en etanol por separado, luego mezclarlos. Llevarlos a volumen de 100 ml
+- Catalizador: pueden ser Tabletas Kjeldahl o preparación en polvo del catalizador: 0.05g de óxido de selenio SeO + 2.5 g de sulfato de sodio Na₂SO₄, se revuelve hasta homogenizar (valor dado por muestra)
+- Ácido clorhídrico HCl ó Ácido sulfúrico H₂SO₄ 0.1 N
+
+## Procedimiento
+
+Pesaje de muestra y preparación para la digestión:
+
+Se pesan aproximadamente 0.5g de muestra, se envuelven en papel toalla (Figura 11)
+
+<Figure src={img["fig11-pesaje-muestra-nitrogeno"]} alt={"Tres balanzas analíticas con la muestra envuelta en papel y un tubo de digestión."} caption={"Figura 11. Pesaje de la muestra para la determinación de Nitrógeno"} />
+
+La determinación de la Proteína Cruda, midiendo inicialmente el Nitrógeno se realiza en tres etapas: Digestión, Destilación y Titulación
+
+### Etapa 1: digestión o hidrólisis
+
+Se le agregan 10 ml de H₂SO₄ al 96-98% + 1 tableta Kjeldahl (Figura 11) y se coloca en digestión por 30 a 45 minutos, permitiendo temperaturas de hasta 450ºC. (Figura 13).
+
+En esta etapa, se convierte primero el nitrógeno en sulfato amónico. La muestra sufre un tratamiento con ácido sulfúrico concentrado (96-98 %) durante una hora a 450°C.
+
+<Figure src={img["fig12-preparacion-muestra-digestion"]} alt={"Esquema de un tubo Büchi con muestra, ácido sulfúrico y catalizador, junto a una gradilla de tubos."} caption={"Figura 12. Preparación de la muestra para la digestión"} />
+
+<Figure src={img["fig13-digestion-campana-extraccion"]} alt={"Equipos de digestión Kjeldahl dentro de la campana de extracción, con la reacción de hidrólisis ácida."} caption={"Figura 13. Digestión en la campana de extracción"} />
+
+### Etapa 2: destilación
+
+Hay liberación del amoniaco por alcalinización: se coloca el tubo con la muestra en el destilador y en un Erlenmeyer se miden 30 ml de ácido bórico al 2% al cual ya se le ha adicionado el indicador mixto.
+
+Se lleva el Erlenmeyer al destilador de nitrógeno por debajo del tubo de salida del destilado.
+
+Se programa el destilador para que adicione a la muestra NaOH al 32% (70 ml) y agua destilada (50 ml) durante 5 minutos.
+
+En esta etapa de destilación, el sulfato de amonio se convierte en amoniaco en forma gaseosa (NH₃) por calentamiento, en presencia de hidróxido de sodio y de vapor de agua, el amoniaco se recupera por destilación sobre el ácido bórico y los indicadores mixtos que están en el Erlenmeyer.
+
+<Figure src={img["fig14-preparacion-proceso-destilacion"]} alt={"Esquema del destilador de nitrógeno con el erlenmeyer de ácido bórico, el tubo Büchi y las reacciones de destilación."} caption={"Figura 14. Preparación de la muestra para la destilación y proceso de destilación"} />
+
+### Etapa 3: titulación
+
+Se lleva el Erlenmeyer con la muestra para la titulación con la bureta.
+
+Titulación del borato de amonio formado con la solución de HCl o H₂SO₄ 0.1 N, usando como indicador rojo de metilo – verde bromocresol. La solución pasa de un color verde a un color original que tenía el ácido bórico con su respectivo indicador.
+
+<Figure src={img["fig15-titulacion-acido-sulfurico"]} alt={"Fotografía de la titulación con bureta sobre placa de agitación y las reacciones de la tercera etapa."} caption={"Figura 15. Titulación con ácido sulfúrico"} />
+
+## Cálculo de nitrógeno en materia seca
+
+Nitrógeno expresado en materia seca, titulando con H₂SO₄:
+
+<Formula>
+
+$$
+\%N = \frac{\text{ml } H_2SO_4 \times N \text{ del ácido} \times \text{m-eq de } N}{\text{peso de la muestra} \times MS_a} \times 100
+$$
+
+</Formula>
+
+N - Normalidad del ácido = 0.1
+
+<Formula>
+
+$$
+\text{m-eq } N \text{ (miliequivalentes de Nitrógeno)} = \left( \frac{\text{Peso molecular de } N}{1000} \right) = \left( \frac{14}{1000} \right) = 0.014
+$$
+
+</Formula>
+
+Ejemplo de cálculo del **pasto BORE** *Alocasia macrorrhiza* con MS analítica - MSa = 95.3%
+
+- Peso muestra = 0.5320g
+- Volumen gastado en la titulación = 12.32 ml
+
+<Formula>
+
+$$
+\% \text{Nitrógeno} = \frac{12.32 \times 0.1 \times 0.014}{0.5320 \times 0.953} \times 100 = 3.40\%
+$$
+
+</Formula>
+
+Proteína Cruda:
+
+<Formula>
+
+$$
+\%PC = \%N \times 6.25 = 3.40 \times 6.25 = 21.26\%
+$$
+
+</Formula>

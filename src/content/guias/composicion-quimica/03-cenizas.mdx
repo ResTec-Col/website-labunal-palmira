@@ -1,0 +1,83 @@
+---
+titulo: "Cenizas"
+descripcion: "Las cenizas como residuo mineral de la calcinación, estimación de la materia orgánica y efecto de un alto contenido de minerales en la digestibilidad."
+---
+
+import { DataTable, Formula } from "../../../components/docs/mdx";
+
+Las cenizas de un alimento son un término analítico equivalente al residuo inorgánico (minerales) que queda después de calcinar la materia orgánica. Las cenizas normalmente, no son las mismas sustancias inorgánicas presentes en el alimento original, debido a las perdidas por volatilización (Na, Cl, K, Py S) o a las interacciones químicas entre los constituyentes.
+
+## Método de análisis
+
+El carbonato potásico se volatiliza apreciablemente a 700°C y se pierde casi por completo a 900°C. El carbonato sódico permanece inalterado a 700°C, pero sufre pérdidas considerables a 900°C. En general, la temperatura adecuada de la mufla son 500°C.
+
+Sin embargo, los cloruros pueden volatilizarse a esta temperatura ([anexo 2](/guias/composicion-quimica/anexo-2-cenizas/)).
+
+Un alto contenido de minerales en una materia prima, puede afectar de manera negativa la digestibilidad de esta. En la tabla 4, se presenta el contenido de cenizas de diferentes materias primas.
+
+<DataTable caption={"Tabla 4. Contenidos de cenizas¹, y estimación de materia orgánica – MO de materias primas"}>
+
+Alimentos | Cenizas (%) | Materia Orgánica (%)
+------------- | ------------- | -------------
+Leucaena | 7.4 | 92.6
+Guinea | 11.9 | 88.1
+Brachiaria decumbens | 12.0 | 88.0
+Puntero | 13.0 | 87.0
+Pasto Kikuyo | 11.4 | 88.6
+Semillas de Girasol | 3.4 | 96.6
+Maíz amarillo (grano) | 1.4 | 98.6
+Torta de Soya² | 6.4 | 93.6
+Harina de pescado² | 16.2 | 91.1
+
+¹Información generada en el laboratorio de Nutrición Animal, por estudiantes de la asignatura de Nutrición Animal Básica. ²Sauvant et al., 2002.
+
+</DataTable>
+
+En general, el contenido de cenizas en los forrajes puede variar entre 7 y 15%, con algunas excepciones como, por ejemplo, el nacedero, *Trichantera gigantea*, que presenta alto contenido de cenizas (17-25%). Otra materia prima utilizada en la formulación de dietas para animales, como es, la harina de huesos puede contener 70% de cenizas, los minerales presentes en esta, son principalmente Calcio y fosforo.
+
+Para estimar la Materia Orgánica de una materia prima, debemos tener en cuenta que: la materia seca de una muestra, está formada por materia seca orgánica y materia seca inorgánica.
+
+Por ejemplo, en el forraje de *Brachiaria decumbens*, el contenido de cenizas es 12%, por lo que el contenido de cenizas de una muestra servirá para estimar el contenido de Materia Orgánica de esta:
+
+<Formula>
+
+$$
+\text{Materia seca (100)} = \begin{cases} \text{Materia orgánica} \\ \text{Materia inorgánica (cenizas): } \mathbf{12} \end{cases}
+$$
+
+</Formula>
+
+Para estimar el contenido de Materia Orgánica se utiliza la siguiente formula:
+
+<Formula>
+
+$$
+\%\,\text{Materia orgánica} = 100 - \%\,\text{cenizas}
+$$
+
+</Formula>
+
+<Formula>
+
+$$
+\%\,\text{MO}_{\textit{Brachiaria decumbens}} = 100 - 12 = 88\,\%
+$$
+
+</Formula>
+
+Las cenizas se utilizan muchas veces para la determinación de constituyentes individuales, por ejemplo, cloruros, fosfatos, calcio y hierro. (Kirk et al, 1996). Estas determinaciones de los diferentes minerales (perfil de minerales) pueden realizarse por métodos de espectrofotometría de absorción atómica.
+
+Un alto contenido de cenizas o minerales implica menos contenido de Materia Orgánica en un alimento y esto a su vez se ve reflejado en una menor digestibilidad de la Materia Seca. Las cenizas junto con la Fibra son elementos de la composición química que afectan la digestibilidad. Como se mencionó anteriormente cuando estos presentan contenidos altos de cenizas, la digestibilidad podría ser más baja, que para aquellas materias primas con contenidos de estos nutrientes más bajos (tabla 5).
+
+<DataTable caption={"Tabla 5. Contenido de materia seca, cenizas y digestibilidad de la MS de forrajes¹: helecho de agua (*Azolla sp.*), bore (*Alocasia macrorrhiza*), morera (*Morus alba*), nacedero (*Trichanthera gigantea*) y salvinia (*Salvinia molesta*)."}>
+
+| Variable | Azolla | Bore | Morera | Nacedero | Salvinia |
+| ------------- |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+| MS Inicial (%) | 7.0 | 14.5 | 26.0 | 21.0 | 7.0 |
+| MS Analítica (%) | 89.9 | 92.9 | 93.4 | 93.1 | 87.9 |
+| Cenizas (%) | 20.6 | 9.8 | 12.8 | 16.3 | 19.8 |
+| Digestibilidad² (%) | 36.4 | 50.7 | 48.2 | 33.0 | 32.7 |
+
+¹Ruiz et al., 2005. ²Digestibilidad enzimática en cerdos.
+
+</DataTable>

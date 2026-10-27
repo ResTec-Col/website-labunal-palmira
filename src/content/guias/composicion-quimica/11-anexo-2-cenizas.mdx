@@ -1,0 +1,90 @@
+---
+titulo: "Anexo 2. Determinación de cenizas"
+descripcion: "Procedimiento para las cenizas totales en mufla a 550–600 °C y para las cenizas insolubles en HCl 1N (sílice), con un ejemplo de cálculo con el pasto bore."
+---
+
+import { Figure, Formula, Steps } from "../../../components/docs/mdx";
+import { imagenes as img } from "./imagenes";
+
+Las cenizas representan la porción mineral, es decir inorgánica, del alimento. Es la parte que queda después de la eliminación del agua y de los componentes orgánicos por combustión, aunque parte de las cenizas sean de origen orgánico (S y P provenientes de proteínas). Además, parte de algunos minerales se pierden por volatilización (Na, Cl, K, P, S). Es también un método GRAVIMÉTRICO.
+
+Lo ideal es realizar la determinación directamente después de la determinación del contenido en materia seca ya que se necesita también desecar las muestras en crisoles de porcelana antes de quemarlas en la mufla.
+
+Cuando un alimento ha sido contaminado por tierra, como es el caso de las raíces (yuca) o de forrajes (heno), las cenizas presentes en la muestra incluyen las de la tierra. Las cenizas que vienen solamente del alimento son solubles en ácido clorhídrico 1 N, al contrario de la sílice. Entonces, se va a determinar esta fracción para conocer las cenizas de origen alimenticio.
+
+## Cenizas totales
+
+### Material necesario
+
+- Mufla (hasta 600 °C)
+- Balanza analítica
+- Desecador
+- Crisoles en porcelana
+- Formulario, lapicero
+- Estufa ventilada
+
+### Procedimiento
+
+<Steps>
+
+1. Desecar crisoles a 105°C durante 30 minutos y colocarlos en un desecador durante 20-30 minutos.
+2. Pesar un crisol, anotar su número y su peso (T = tara) = Peso Crisol.
+3. Tarar la balanza, es decir colocarla en (0.0)
+4. Colocar ± 3 a 5g de muestra en el crisol con una espátula y anotar el peso (Peso de Muestra)
+5. Colocar los crisoles con la muestra en una mufla a 550-600°C durante un mínimo de 6 h. Apagar la mufla, abrir la puerta y esperar 10 minutos
+6. Colocar los crisoles con una pinza en un desecador. Dejar el grifo abierto 2 minutos. Dejar enfriar durante al menos 1 h
+7. Pesar los crisoles y anotar el peso (T + Cenizas) = Peso Crisol + Cenizas
+
+</Steps>
+
+<Figure src={img["fig5-preparacion-crisoles-cenizas"]} alt={"Secuencia de fotografías: crisoles de porcelana, estufa, pinza con crisol y desecador."} caption={"Figura 5. Preparación de los crisoles para la determinación de cenizas. Estufa analítica 30 min y desecador 20-30 min"} />
+
+Ejemplo de cálculo del **pasto BORE** *Alocasia macrorrhiza*
+
+<Formula>
+
+$$
+\% \text{ Cenizas} = \frac{\left( \text{Peso del crisol} + \text{Cenizas} \right) - \text{Peso del crisol}}{\text{Peso muestra} \times MS_{\text{ analítica}}} \times 100
+$$
+
+</Formula>
+
+Ejemplo de cálculo:
+
+<Formula>
+
+$$
+\% \text{ Cenizas} = \frac{(25.8707g - 25.4508g)}{(3.2156g \times 0.9503g)} \times 100 = 13.7\%
+$$
+
+</Formula>
+
+<Figure src={img["fig6-determinacion-cenizas"]} alt={"Diagrama de flujo con fotografías de pesaje, mufla a 600 °C, desecador y pesaje final con la fórmula de cenizas."} caption={"Figura 6. Determinación de cenizas."} />
+
+## Cenizas insolubles en HCl 1N (sílice)
+
+El principio es solubilizar las cenizas de origen alimenticio en HCl 1N, filtrar la parte insoluble, quemar el filtro y pesar la fracción insoluble.
+
+### Material necesario
+
+- Mufla
+- Balanza analítica
+- Desecador
+- Beaker de 125 ml + vidrio de reloj
+- Crisoles filtrantes en vidrio (tipo P3 o P4), tarados a 105°C
+- Solución de HCl 1N
+- Bomba de vacío
+- Estufa con ventilación
+
+### Procedimiento
+
+<Steps>
+
+1. Después de la pesada de los crisoles provenientes de la mufla, agregar a las cenizas un exceso de solución de HCl 1N.
+2. Trasladar en un beaker y hervir 2 minutos con un vidrio de reloj sobre el beaker.
+3. Filtrar sobre el crisol filtrante previamente tarado, limpiar varias veces con agua destilada
+4. Quemar a 550 °C durante 3 h
+5. Colocar al menos 1 h en un desecador
+6. Pesar el crisol (T + Sílice) y calcular el contenido en sílice y, por diferencia, el de cenizas solubles.
+
+</Steps>

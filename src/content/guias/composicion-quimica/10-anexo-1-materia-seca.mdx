@@ -1,0 +1,138 @@
+---
+titulo: "Anexo 1. Determinación de la materia seca"
+descripcion: "Procedimiento paso a paso para la materia seca inicial a 60 °C, la materia seca analítica a 105 °C y la materia seca total, con un ejemplo de cálculo resuelto."
+---
+
+import { Figure, Formula, Steps } from "../../../components/docs/mdx";
+import { imagenes as img } from "./imagenes";
+
+**Caso de un alimento húmedo** (alto contenido de agua; por ejemplo, forrajes y frutas).
+
+Para poder moler la muestra y analizarla, se debe desecar la muestra a una temperatura de 60°C para impedir que la desecación afecte su composición química. A esta determinación se le conoce como **Materia Seca Inicial**. Sin embargo, esta temperatura no permite una desecación completa de la muestra. Una vez la muestra desecada y molida, se debe determinar de nuevo su contenido en materia seca. Esta segunda determinación se llama **Materia Seca Analítica**. Se utiliza para expresar los resultados en base seca.
+
+## Materia seca inicial
+
+### Material necesario
+
+- El mismo material que para el análisis del alimento seco, más:
+- Balanza de precisión (0.01 g)
+- Recipientes en aluminio + marcador
+- Bolsas de papel o periódico o bandejas de aluminio
+
+### Procedimiento de materia seca inicial
+
+<Steps>
+
+1. Tomar una muestra (100-300 g) homogénea y representativa de la materia fresca a analizar, colocarla en un recipiente en aluminio o periódico previamente tarado con la balanza de precisión.
+2. Pesar el recipiente de aluminio o papel periódico (tara).
+3. Poner la balanza en (0,0) con el periódico sobre esta
+4. Pesar la muestra junto con el periódico.
+5. Secar en estufa a 60°C por 24-48 h.
+6. Dejar enfriar 30 min a temperatura ambiente.
+7. Pesar nuevamente y calcular el %MS inicial. Después de este secado la muestra es molida.
+
+</Steps>
+
+Ejemplo de cálculo del **pasto BORE** *Alocasia macrorrhiza*
+
+- Peso del periódico = Tara = 13.2g (2)
+- Peso del forraje fresco = 320.6g (4)
+- Peso seco después del secado = Tara + Peso seco = 90.8g (7)
+
+<Formula>
+
+$$
+\%MS_{\text{ inicial}} = \left( \frac{(\text{Tara} + \text{Peso seco}) - \text{Tara}}{\text{Peso fresco}} \right) \times 100
+$$
+
+</Formula>
+
+<Formula>
+
+$$
+\%MS_{\text{ inicial}} = \left( \frac{(90.8g - 13.2g)}{320.6g} \right) \times 100 = \left( \frac{77.6g}{320.6g} \right) \times 100 = 24.2\%
+$$
+
+</Formula>
+
+<Figure src={img["procedimiento-ms"]} alt={"Diagrama de flujo con fotografías: pesaje en balanza de precisión, secado en estufa a 60 °C, enfriamiento y nuevo pesaje del forraje."} caption={"Figura 1. Procedimiento para la Determinación de Materia Seca Inicial"} />
+
+<Figure src={img["fig2-molienda-forraje"]} alt={"Molino de martillos que recibe forraje seco y entrega harina en un frasco rotulado."} caption={"Figura 2. Molienda del forraje a tamaño de partícula de 1 mm"} />
+
+## Determinación de la materia seca analítica
+
+Después de la molienda, de la harina del forraje secada a 60°C (se acepta que la molienda no afecta el contenido en agua de manera significativa), se toma una pequeña muestra (± 3 g), no destinada al análisis. Se coloca a 105°C hasta peso constante (24 h), se determina el peso antes y después de la desecación y se calcula el porcentaje de materia seca. Este es un método GRAVIMÉTRICO. Con este método se calcula el contenido de materia seca analítica.
+
+### Material necesario
+
+- Estufa ventilada (temperatura máxima > 105°C)
+- Balanza analítica (precisión: 0.0001g)
+- Crisoles en porcelana (Ø 3-4 cm)
+- Desecador con Silica gel
+- Espátula, pinza, lapicero, formulario para toma de datos
+
+### Preparación de los crisoles
+
+- Desecar crisoles a 105°C durante 30 minutos
+- Colocarlos en un desecador durante 20-30 minutos
+
+<Figure src={img["fig3-preparacion-crisoles"]} alt={"Secuencia de fotografías: crisoles de porcelana, estufa, pinza con crisol y desecador."} caption={"Figura 3. Preparación de los crisoles para la determinación de MS analítica"} />
+
+### Procedimiento de MS analítica
+
+<Steps>
+
+9. Se pesa un crisol en la balanza analítica
+10. Se anota su número y su peso (T=tara).
+11. Se coloca la balanza en 0.0 con el crisol
+12. Se agrega la muestra del forraje molido de 3-5g con la espátula y se anota el peso. Se debe medir con precisión una cantidad cercana de 3g (Ej. 2.9962 o 3. 094)
+13. Se colocan los crisoles con la muestra a 105°C entre 6 a 24 h.
+14. Se sacan los crisoles con una pinza de la estufa y se colocan en un desecador entre 20-30 min.
+15. Se pesan los crisoles con la muestra y se anota el peso final.
+16. Se calcula el porcentaje de materia seca analítica.
+
+</Steps>
+
+Ejemplo de cálculo del **pasto BORE** *Alocasia macrorrhiza*
+
+- Peso del crisol = Tara = 25.1508g (10)
+- Peso de la muestra en g, aproximadamente 3g = 3.2321g (12)
+- Peso del crisol + Materia Seca = 28.2311g (15)
+
+<Formula>
+
+$$
+\%MS_{\text{ analítica}} = \left( \frac{(\text{Peso del crisol} + \text{MS}) - \text{Peso del crisol}}{\text{Peso muestra }} \right) \times 100
+$$
+
+</Formula>
+
+<Formula>
+
+$$
+\%MS_{\text{ analítica}} = \left( \frac{(28.2311g - 25.1508g)}{3.2321g} \right) \times 100 = \left( \frac{3.0803g}{3.2321g} \right) \times 100 = 95.3\%
+$$
+
+</Formula>
+
+<Figure src={img["fig4-ms-analitica"]} alt={"Diagrama de flujo con fotografías de balanza analítica, estufa a 105 °C, desecador y pesaje final con la fórmula de la MS analítica."} caption={"Figura 4. Procedimiento para la determinación de Materia Seca Analítica"} />
+
+## Estimación de materia seca total - MST
+
+<Formula>
+
+$$
+MST = \frac{\left(\% \text{ materia seca a } 60\,^{\circ}C\right) \times \left(\% \text{ materia seca a } 105\,^{\circ}C\right)}{100}
+$$
+
+</Formula>
+
+Ejemplo:
+
+<Formula>
+
+$$
+MST = \frac{(24.2\% \times 95.3\%)}{100} = 23.7\%
+$$
+
+</Formula>

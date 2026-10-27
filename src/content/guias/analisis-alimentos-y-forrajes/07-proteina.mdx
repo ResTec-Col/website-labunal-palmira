@@ -1,0 +1,230 @@
+---
+titulo: "Proteína bruta"
+descripcion: "Método de Kjeldahl para la proteína bruta: digestión, destilación y titulación del nitrógeno, reactivos, cálculo del %N y factores de conversión a proteína."
+---
+
+import { Callout, DataTable, Formula } from "../../../components/docs/mdx";
+
+Las proteínas son polímeros de aminoácidos. Es el único macro nutriente que contiene Nitrógeno, lo que le distingue de la grasa y los carbohidratos. La presencia de nitrógeno en las proteínas es muchas veces utilizado para estimar la cantidad de proteína bruta en un alimento. Como se considera que las proteínas contienen, en promedio, 16 g N/100 g, se determina el contenido en nitrógeno y se multiplica el resultado por 6.25 (100/16).
+
+El método todavía más utilizado en el mundo es el método de Kjeldahl, del nombre del jefe de laboratorio de la cervecería Carlsberg (Copenhagen, Dinamarca) que publicó el protocolo de un método POR TITULACIÓN en 1883.
+
+## Principio del método
+
+**1. Hidrólisis ácida:** para convertir el nitrógeno primero en sulfato amónico (v. ecuación). La muestra sufre un tratamiento con ácido sulfúrico concentrado (96-98 %) durante una hora a 450 °C. El rendimiento se mejora en presencia de un catalizador. El tratamiento necesita un sistema de recuperación del vapor ácido para no alterar los equipos y contaminar el ambiente.
+
+<Formula>
+
+$$
+\text{Materia orgánica} + \text{H}_2\text{SO}_4 \xrightarrow{450\,^\circ C + \text{catalizador}} \text{CO}_2 + \text{H}_2\text{O} + (\text{NH}_4)_2\text{SO}_4
+$$
+
+</Formula>
+
+**2. Liberación del amoniaco por alcalinización y destilación al vapor:** se va convertir el sulfato de amonio en amoniaco en forma gaseosa $(NH_3)$ por calentamiento, en presencia de hidróxido de sodio y de vapor de agua, para recuperar el amoniaco
+
+<Formula>
+
+$$
+(NH_4)_2SO_4 + 2\,NaOH \rightarrow 2\,NH_4OH + Na_2SO_4 \tag{1}
+$$
+
+</Formula>
+
+<Formula>
+
+$$
+NH_4OH \rightleftharpoons NH_3 + H_2O \tag{2}
+$$
+
+</Formula>
+
+<Formula>
+
+$$
+(NH_4)_2SO_4 + 2\,NaOH \rightarrow Na_2SO_4 + 2\,H_2O + 2\,NH_3 \tag{3}
+$$
+
+</Formula>
+
+El amoniaco producido se recupera en una solución que contiene un exceso de ácido bórico:
+
+<Formula>
+
+$$
+NH_3 + H_3BO_3 \longrightarrow NH_4H_2BO_3
+$$
+
+</Formula>
+
+Y es luego estimada por titulación del borato de amonio producido con un ácido, por Ej. $H_2SO_4$ 0.1N
+
+**3. Titulación del amoniaco:**
+
+<Formula>
+
+$$
+NH_4H_2BO_3 + 2\,HCl \longrightarrow NH_4Cl + H_3BO_3
+$$
+
+</Formula>
+
+Se puede resumir las dos últimas ecuaciones de la manera siguiente:
+
+<Formula>
+
+$$
+NH_3 + HCl \longrightarrow NH_4Cl
+$$
+
+</Formula>
+
+A un mol de HCl corresponde 1 mol de N, es decir 14 g N
+
+<Formula>
+
+$$
+1\ ml\ HCl\ 1\ N = 0.014g\ N = 14\ mg\ N
+$$
+
+</Formula>
+
+<Formula>
+
+$$
+1\ ml\ H_2SO_4\ 1\ N = 0.028\ g\ N = 28\ mg\ N
+$$
+
+</Formula>
+
+**(Kjeldahl J (1883) Neue Methode zür Bestimmung der Stickstoffs in organischen Körpern. Z Anal Chem 22, 366-382)**
+
+## Observaciones
+
+1. El método de Kjeldahl es, todavía, el más utilizado en el mundo, aunque en disminución por razón de contaminación ambiental (catalizadores, ácidos concentrados). Se utiliza cada vez más el método por combustión, o método de Dumas, del nombre del investigador francés que le desarrolló en 1831. [Dumas J. (1831) Ann. Chim. Phys. (Paris) 47, 198]. Olvidado por más de un siglo, este método fue mejorado en los últimos años, gracias a la utilización de equipos modernos. El principio es el de calcinar la muestra y medir la producción de $N_2$, producto final de la combustión.
+
+2. El coeficiente de conversión N/proteínas 6.25 corresponde al contenido en nitrógeno de la proteína de carne. En realidad, la mayoría de los alimentos tienen un contenido distinto y se debería utilizar un coeficiente diferente para cada uno de ellos, especialmente para los productos vegetales. En muchos casos, el coeficiente 6.25 es causa de una sobreestimación del contenido real en proteínas de los alimentos. Ejemplos:
+
+<DataTable caption={"Tabla 2. Contenido de nitrógeno y coeficiente de conversión N/proteína de algunos alimentos."}>
+
+| Alimento | %N | Coeficiente de conversión |
+| -------- | ----- | ------------------------ |
+| Carne | 16.00 | 6.25 |
+| Leche | 15.66 | 6.38 |
+| Maíz | 17.70 | 5.65 |
+| Trigo | 18.76 | 5.33 |
+| Arroz | 19.34 | 5.17 |
+
+</DataTable>
+
+## Materiales y equipo
+
+* Balanza analítica
+* Destilador
+* Digestor
+* Cámara de extracción
+* Placa de agitación
+* Magnetos
+* Bureta
+* Probeta de 30-50 ml
+* Erlenmeyer 250 ml
+* Tubos Büchi
+* Pipetas
+* Agua destilada
+
+## Reactivos
+
+* Ácido sulfúrico $H_2SO_4$ (96-98 %)
+* Hidróxido de sodio NaOH (32%)
+* Carbonato de sodio ($Na_2CO_3$)
+* Ácido bórico $H_3BO_3$ (2 %)
+* Azul de timol
+* Indicador mixto: se prepara con rojo de metilo y verde de bromocresol
+* Catalizador
+* Ácido clorhídrico $H_2SO_4$ 0.1 N
+
+**Nota:**
+
+La presentación del NaOH es:
+
+* NaOH Al 32 % de pureza en forma líquida, ó
+* NaOH granulado (99 % de pureza) en este caso, se prepara 1 litro de NaOH al 32 % de pureza = 320 g de NaOH, se disuelve en agua destilada y se completa 1 litro
+
+$H_3BO_3$ al (99% de pureza) en este caso, se prepara 1 litro de $H_3BO_3$ al 2% de pureza = 20 g de $H_3BO_3$ se disuelve en agua destilada y se completa 1 litro.
+
+**Indicador Mixto:**
+
+* Verde de bromocresol 0.60 g
+* Rojo de metilo 0.40 g
+
+Disolución en etanol por separado, luego mezclarlos y llevarlos a volumen de 100 ml (1 litro)
+
+**Catalizador presentación:**
+
+* Tabletas Kjeldahl
+* En polvo: 0.05 g de óxido de selenio SeO + 2.5 g de sulfato de sodio $Na_2SO_4$ , se revuelve hasta homogeneizar (valor dado por muestra)
+
+## Procedimiento
+
+Preparación de las soluciones: el ácido a utilizar es del 96 -98 % de pureza
+
+### Digestión
+
+Se enciende el digestor 10 minutos antes de comenzar la digestión, colocando el regulador de potencia en posición 9.
+
+* Se pesa 0.5 g de muestra, se envuelven en papel toalla y se introduce en el tubo de digestión, se le agregan 10 ml de $H_2SO_4$ 96-98 % + 1 tableta Kjeldahl y se coloca en digestión por 30 a 45 minutos, permitiendo temperaturas de hasta 450°C.
+
+Se retiran los tubos a una gradilla y se dejan enfriar media hora, aproximadamente.
+
+Encender el destilador de nitrógeno 15 minutos después de haber comenzado la digestión. Colocar en un tubo de digestión con 100 ml de agua destilada, simulando una destilación durante 5 minutos (precalentamiento).
+
+<Callout tipo="seguridad" titulo="Vapores de la digestión">
+
+La digestión produce vapores perjudiciales. Estos se pueden eliminar por medio de unos filtros que se encuentran en la cámara de extracción, evitando así que estos vapores se disipen en el ambiente, también pueden ser absorbidos en agua por medio de un Scrubber conectado a las flautas del digestor. En nuestro caso los gases tóxicos provocados por la digestión son recuperados por el extractor de gases que los convierte en $CO_2$ y $H_2O$ que son eliminados con la ayuda de una cámara de extracción, por cañería (alcantarilla).
+
+</Callout>
+
+### Destilación
+
+   * Colocar el tubo con la muestra en el destilador.
+   * En un erlenmeyer se miden 30 ml de ácido bórico al 2% al cual ya se le ha adicionado el indicador mixto.
+   * Se lleva el erlenmeyer al destilador de nitrógeno por debajo del tubo de salida del destilado. Asegurarse que la punta del condensador está totalmente sumergido dentro del ácido bórico.
+   * Se programa el destilador para que adicione a la muestra NaOH al 32% (50 ml) y agua destilada (200 ml) durante 5 minutos.
+
+En la digestión del sulfato ácido de amonio por medio de un exceso de álcali fuerte se libera amoniaco, el cual se recoge por destilación sobre el ácido bórico que está en el erlenmeyer.
+
+### Titulación
+
+   * Se lleva el erlenmeyer con la muestra para la titulación con la bureta.
+
+Titulación del borato de amonio formado con la solución de $H_2SO_4$ 0.1 N, usando como indicador rojo de metilo - verde bromocresol. La solución pasa de un color azul a un color rosado que tenía el ácido bórico con su respectivo indicador.
+
+**(AOAC (1990) Official Methods of Analysis of the Association of Official Analytical Chemists. 15tEd., Arlington, Virginia, USA. METODO número 976.05)**
+
+### Cálculo
+
+#### Nitrógeno expresado en materia seca, titulando con H2SO4
+
+a. Porcentaje de nitrógeno:
+
+<Formula>
+
+$$
+\%\,N = \frac{\text{ml } H_2SO_4 \text{ corregidos} \times \text{normalidad del ácido} \times \text{m-equivalentes de N} \times 100}{\text{peso de la muestra} \times \%\,\text{materia seca}}
+$$
+
+</Formula>
+
+b. m = equivalentes de Nitrógeno para H2SO4 = Peso molecular / 1000 = 14/ 1000 = 0.014
+
+c. Muestra blanco se gastó en la titulación 0.2 ml de H2SO4
+
+d. Mililitros de H2SO4 – 0.02 = mililitros de H2SO4 corregidos gastados en el proceso de titulación
+
+e. % de Proteína = % de Nitrógeno X 6.25 % para forrajes y concentrados
+
+**Ejemplo materia prima torta de soya, titulando con Ácido sulfúrico:**
+
+ml gastados en la titulación = 26.5 – 0.2 = 26.3 ml
+
+% de Nitrógeno expresado en Materia seca = 26.3 X 0.1 X 0.014 X 100 / 0.5 X 0.91 = 8.08 %

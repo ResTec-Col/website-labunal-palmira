@@ -1,0 +1,66 @@
+---
+titulo: "Almidones y azúcares"
+descripcion: "Estimación de almidones y azúcares como extracto libre de nitrógeno (ELN) con la fibra cruda o con la FDN, con un ejemplo resuelto para un heno de gramínea."
+---
+
+import { DataTable, Formula } from "../../../components/docs/mdx";
+
+Para su determinación existen protocolos de laboratorio del almidón total, azucares totales y reductores, igualmente para la estimación del contenido de almidones y azucares de una materia prima se utiliza el propuesto por Henneberg y Stohmann (1867) en la estación experimental de Weende (Alemania), en el cual se estima con una fórmula, estos componentes a partir de los analizados.
+
+A la estimación de los almidones y azúcares por el método de Weende se le llamó Contenido de Extracto Libre de Nitrógeno – ELN o Extracto No Nitrogenado.
+
+<Formula>
+
+$$
+ELN = 100 - (\% \text{Cenizas} + \%PC + \%EE + \%FC)
+$$
+
+</Formula>
+
+Como se explicó anteriormente, la FC no determina los componentes de la pared celular de manera exacta, ya que los reactivos utilizados en esta determinación diluyen parte de la pared celular. Por esta razón, algunos investigadores reemplazan FC por FDN en la fórmula con la finalidad de obtener un resultado más fiable de almidones y azúcares:
+
+<Formula>
+
+$$
+ELN = 100 - (\% \text{Cenizas} + \%PC + \%EE + \%FDN)
+$$
+
+</Formula>
+
+Si tomamos como ejemplo los contenidos de FC y FDN del heno de gramínea de la tabla 15 y tenemos en cuenta los otros valores de los nutrientes de este heno:
+
+<DataTable caption={"Composición del heno de gramínea usada en el ejemplo."}>
+
+| Componente | Porcentaje (%) |
+|------------|---------------|
+| Cenizas | 10% |
+| PC | 11% |
+| EE | 3% |
+| **FC** | **30%** |
+| **FDN** | **60%** |
+
+</DataTable>
+
+Al utilizar las dos fórmulas, para estimar el ELN:
+
+- Usando FC:
+
+<Formula>
+
+$$
+ELN = 100 - (10 + 11 + 3 + \mathbf{30}) = 46\%
+$$
+
+</Formula>
+
+- Usando FDN:
+
+<Formula>
+
+$$
+ELN = 100 - (10 + 11 + 3 + \mathbf{60}) = 16\%
+$$
+
+</Formula>
+
+Un heno de gramínea con 46% de almidones y azúcares no sería una buena estimación de los azúcares y almidones de un forraje, 16% sería una mejor estimación de estos componentes, aunque sigue siendo un poco alto.

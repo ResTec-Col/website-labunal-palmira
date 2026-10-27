@@ -1,0 +1,106 @@
+import type { MetaGuia } from "../tipos";
+
+/** Capítulos de la guía, generados inicialmente por scripts/convert-qmd.mjs. */
+export const meta: MetaGuia = {
+  tiempoLecturaMin: 52,
+  capitulos: [
+    {
+      slug: "presentacion-y-abreviaturas",
+      archivo: "01-presentacion-y-abreviaturas.mdx",
+      titulo: "Presentación y abreviaturas",
+      descripcion: "Abreviaturas usadas en la guía y aspectos generales para analizar alimentos: agua y materia seca, cantidad de muestra necesaria y expresión en base seca.",
+      orden: 1,
+    },
+    {
+      slug: "materia-seca",
+      archivo: "02-materia-seca.mdx",
+      titulo: "Materia seca",
+      descripcion: "Importancia de la materia seca en nutrición animal, secado inicial a 60 °C y analítico a 105 °C, y cálculo de la materia seca total de varias materias primas.",
+      orden: 2,
+    },
+    {
+      slug: "cenizas",
+      archivo: "03-cenizas.mdx",
+      titulo: "Cenizas",
+      descripcion: "Las cenizas como residuo mineral de la calcinación, estimación de la materia orgánica y efecto de un alto contenido de minerales en la digestibilidad.",
+      orden: 3,
+    },
+    {
+      slug: "extracto-etereo",
+      archivo: "04-extracto-etereo.mdx",
+      titulo: "Extracto etéreo",
+      descripcion: "Extracto etéreo de forrajes, oleaginosas y productos de origen animal, extracción con y sin hidrólisis ácida y perfil de ácidos grasos de aceites y grasas.",
+      orden: 4,
+    },
+    {
+      slug: "proteina",
+      archivo: "05-proteina.mdx",
+      titulo: "Proteína cruda",
+      descripcion: "Nitrógeno y proteína cruda por Kjeldahl, factores de conversión del nitrógeno, nitrógeno no proteico y aminoácidos de productos de origen animal.",
+      orden: 5,
+    },
+    {
+      slug: "fibra",
+      archivo: "06-fibra.mdx",
+      titulo: "Fibra",
+      descripcion: "Pared celular de los alimentos: fibra cruda frente a FDN, FDA y lignina de Van Soest, límites de fibra en las dietas y valor relativo de los forrajes (VRF).",
+      orden: 6,
+    },
+    {
+      slug: "almidones-y-azucares",
+      archivo: "07-almidones-y-azucares.mdx",
+      titulo: "Almidones y azúcares",
+      descripcion: "Estimación de almidones y azúcares como extracto libre de nitrógeno (ELN) con la fibra cruda o con la FDN, con un ejemplo resuelto para un heno de gramínea.",
+      orden: 7,
+    },
+    {
+      slug: "energia-bruta",
+      archivo: "08-energia-bruta.mdx",
+      titulo: "Energía bruta",
+      descripcion: "Energía bruta medida en la bomba calorimétrica y su diferencia con la energía digestible, con valores de referencia para maíz, avena, soya, heno y paja.",
+      orden: 8,
+    },
+    {
+      slug: "referencias",
+      archivo: "09-referencias.mdx",
+      titulo: "Referencias bibliográficas",
+      descripcion: "Referencias bibliográficas de la guía de composición química de los alimentos: textos de nutrición animal, métodos de análisis y tablas de composición.",
+      orden: 9,
+    },
+    {
+      slug: "anexo-1-materia-seca",
+      archivo: "10-anexo-1-materia-seca.mdx",
+      titulo: "Anexo 1. Determinación de la materia seca",
+      descripcion: "Procedimiento paso a paso para la materia seca inicial a 60 °C, la materia seca analítica a 105 °C y la materia seca total, con un ejemplo de cálculo resuelto.",
+      orden: 10,
+    },
+    {
+      slug: "anexo-2-cenizas",
+      archivo: "11-anexo-2-cenizas.mdx",
+      titulo: "Anexo 2. Determinación de cenizas",
+      descripcion: "Procedimiento para las cenizas totales en mufla a 550–600 °C y para las cenizas insolubles en HCl 1N (sílice), con un ejemplo de cálculo con el pasto bore.",
+      orden: 11,
+    },
+    {
+      slug: "anexo-3-extracto-etereo",
+      archivo: "12-anexo-3-extracto-etereo.mdx",
+      titulo: "Anexo 3. Determinación del extracto etéreo",
+      descripcion: "Partes del extractor Soxhlet, procedimiento paso a paso para la grasa libre y la grasa total con hidrólisis ácida, y ejemplo de cálculo del extracto etéreo.",
+      orden: 12,
+    },
+    {
+      slug: "anexo-4-proteina",
+      archivo: "13-anexo-4-proteina.mdx",
+      titulo: "Anexo 4. Determinación de proteína cruda",
+      descripcion: "Material, reactivos y etapas de digestión, destilación y titulación del método Kjeldahl, con el cálculo del nitrógeno y de la proteína cruda en un ejemplo.",
+      orden: 13,
+    },
+    {
+      slug: "anexo-5-van-soest",
+      archivo: "14-anexo-5-van-soest.mdx",
+      titulo: "Anexo 5. Análisis de Van Soest",
+      descripcion: "Fracciones del análisis de Van Soest: fibra detergente neutra, fibra detergente ácida y lignina, con el cálculo de hemicelulosa, celulosa y el ajuste final.",
+      orden: 14,
+    },
+  ],
+};

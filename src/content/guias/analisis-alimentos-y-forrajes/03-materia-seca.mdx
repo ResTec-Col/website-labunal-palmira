@@ -1,0 +1,70 @@
+---
+titulo: "Materia seca"
+descripcion: "Protocolo para determinar la materia seca inicial a 60 °C, la materia seca analítica a 105 °C y la materia seca total de alimentos húmedos como los forrajes."
+---
+
+import { Formula, Steps } from "../../../components/docs/mdx";
+
+## 1.1 Con estufa analítica a 60° y 105°C
+
+**Caso de un alimento húmedo** (Ejemplo forraje)
+
+Para poder moler la muestra y analizarla, se debe secar inicialmente una temperatura de 60 °C, para impedir que la desecación afecte su composición química. Esta primera determinación se llama **materia seca inicial**. Sin embargo, esta temperatura no permite una desecación completa de la muestra. Una vez la muestra desecada y molida, se debe determinar de nuevo su contenido en materia seca. Esta segunda determinación se llama **materia seca analítica**. Se utiliza para expresar los resultados en base seca.
+
+### Material necesario
+
+- Papel periódico, bolsa de papel, bandeja de aluminio
+
+- Balanza de precisión (min: 5g max:16100g)
+
+- Marcador
+
+### Procedimiento
+
+<Steps>
+
+1. Tomar una muestra (100-300 g) homogénea y representativa de la materia fresca a analizar, colocarla en un recipiente (aluminio, papel periódico, bolsa de papel) previamente tarado con la balanza de precisión.
+2. Pesar el recipiente con la muestra y anotar el peso (Peso fresco)
+3. Colocar el recipiente en la estufa a 60 °C por 24 h (hasta peso constante)
+4. Sacar el recipiente y DEJAR QUE SE ENFRIE AL AIRE LIBRE durante dos horas
+5. Pesarlo y calcular su contenido en materia seca, moler inmediatamente.
+
+</Steps>
+
+<Formula>
+
+$$
+\text{Materia seca inicial} = \left( \frac{(\text{Tara} + \text{Peso seco}) - \text{Tara}}{\text{Peso fresco}} \right) \times 100
+$$
+
+</Formula>
+
+### Determinación de la materia seca analítica
+
+Después de la molienda (se acepta que la molienda no afecta el contenido en agua de manera significativa):
+
+- Se pesa en una balanza analítica una muestra de 3 a 5g en un crisol de porcelana.
+
+- Se lleva a estufa de 105°C durante 12 horas
+
+- Se saca de la estufa y se lleva a desecador para dejar enfriar durante 1 hora
+
+- Se pesa nuevamente en balanza analítica y se calcula el contenido en materia seca analítica:
+
+<Formula>
+
+$$
+\text{\% Materia seca analítica} = \left( \frac{(\text{Tara} + \text{Peso de muestra seco}) - \text{Tara}}{\text{Peso de muestra a } 60\,^\circ\text{C}} \right) \times 100
+$$
+
+</Formula>
+
+<Formula>
+
+$$
+\text{\% Materia seca total} = \frac{(\% \text{ materia seca a } 60 \, ^\circ C) \times (\% \text{ materia seca a } 105 \, ^\circ C)}{100}
+$$
+
+</Formula>
+
+**AOAC** (1990) Official Methods of Analysis of the Association of Official Analytical Chemists. 15th Ed., Arlington, Virginia, USA. METODO número AOAC 934.01)

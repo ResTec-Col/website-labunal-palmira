@@ -1,0 +1,55 @@
+---
+titulo: "Anexo 5. Análisis de Van Soest"
+descripcion: "Fracciones del análisis de Van Soest: fibra detergente neutra, fibra detergente ácida y lignina, con el cálculo de hemicelulosa, celulosa y el ajuste final."
+---
+
+import { Figure, Formula } from "../../../components/docs/mdx";
+import { imagenes as img } from "./imagenes";
+
+En el análisis de Van Soest se miden tres fracciones:
+
+- Fibra Detergente Neutra - FDN
+- Fibra Detergente Ácida - FDA
+- Lignina Detergente Ácida - LDA
+
+Se pueden estimar el contenido de hemicelulosa y celulosa de la pared celular:
+
+<Formula>
+
+$$
+\text{Hemicelulosa} = \%FDN - \%FDA
+$$
+
+</Formula>
+
+<Formula>
+
+$$
+\text{Celulosa} = \%FDA - \%LDA
+$$
+
+</Formula>
+
+## Determinación de la fibra detergente neutra – FDN
+
+Se pesa la muestra y se agrega la Solución Detergente Neutra que se encarga de eliminar el contenido citoplasmático (orgánico), quedando la pared celular y los minerales.
+
+<Figure src={img["fig16-fibra-detergente-neutra"]} alt={"Esquema de una célula vegetal tratada con solución detergente neutra que elimina el citoplasma y deja la pared celular."} caption={"Figura 16. Determinación de la Fibra Detergente Neutra."} />
+
+## Determinación de la fibra detergente ácida – FDA
+
+Después de obtener la pared celular y los minerales, se agrega Solución Detergente Ácida para eliminar la hemicelulosa, quedando la celulosa, lignina y minerales (Figura 17).
+
+<Figure src={img["fig17-fibra-detergente-acida"]} alt={"Esquema de la pared celular tratada con solución detergente ácida que elimina la hemicelulosa y deja celulosa y lignina."} caption={"Figura 17. Determinación de Fibra Detergente Ácida"} />
+
+## Determinación de lignina – LDA
+
+Después de obtener celulosa, lignina y minerales, se añade ácido sulfúrico al 72% para eliminar la celulosa, quedando lignina y minerales (Figura 18).
+
+<Figure src={img["fig18-lignina-detergente-acida"]} alt={"Esquema del residuo de FDA tratado con ácido sulfúrico al 72 % que elimina la celulosa y deja lignina y minerales."} caption={"Figura 18. Determinación de Lignina Detergente Ácida"} />
+
+## Ajuste final de FDN, FDA y LDA
+
+Posterior a estos tres pasos o determinaciones, se realiza la combustión de la lignina para ajustar las determinaciones de FDN, FDA y LDA, quitando los minerales de los residuos (Figura 19).
+
+<Figure src={img["fig19-cenizas-minerales"]} alt={"Esquema de la combustión del residuo de lignina a 500–600 °C durante 5 horas que deja solo los minerales."} caption={"Figura 19. Determinación de cenizas o minerales de la muestra."} />
