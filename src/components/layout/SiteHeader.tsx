@@ -16,7 +16,7 @@ function precargarMenu() {
 
 function claseEnlace({ isActive }: { isActive: boolean }) {
   return clsx(
-    "rounded-md px-3 py-2 text-[0.95rem] font-medium no-underline transition-colors",
+    "whitespace-nowrap rounded-md px-2.5 py-2 text-[0.95rem] font-medium no-underline transition-colors xl:px-3",
     isActive ? "bg-accent-soft text-accent" : "text-text-muted hover:bg-surface hover:text-text",
   );
 }
@@ -55,7 +55,7 @@ export function SiteHeader() {
     >
       <div className="contenedor flex h-[var(--header-h)] items-center justify-between gap-3">
         <Logotipo />
-        <nav aria-label="Principal" className="hidden lg:block">
+        <nav aria-label="Principal" className="hidden shrink-0 lg:block">
           <ul className="m-0 flex list-none items-center gap-1 p-0">
             {NAVEGACION.map((item) => (
               <li key={item.to}>

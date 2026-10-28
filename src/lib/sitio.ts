@@ -30,7 +30,7 @@ export const NAVEGACION = [
   { to: "/guias/", texto: "Guías" },
   { to: "/plantillas/", texto: "Plantillas" },
   { to: "/app/", texto: "App y NutriBot" },
-  { to: "/acerca/", texto: "Acerca" },
+  { to: "/acerca/", texto: "Sobre nosotros" },
 ] as const;
 
 export const VERSION_SITIO = "2.0.0";

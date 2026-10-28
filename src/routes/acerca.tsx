@@ -11,7 +11,7 @@ const DESCRIPCION =
 
 const MIGAS: Miga[] = [
   { nombre: "Inicio", ruta: "/" },
-  { nombre: "Acerca", ruta: "/acerca/" },
+  { nombre: "Sobre nosotros", ruta: "/acerca/" },
 ];
 
 const EQUIPO = [
@@ -35,9 +35,12 @@ const EQUIPO = [
 export default function Acerca() {
   return (
     <div className="contenedor py-10">
-      <Seo title="Acerca del laboratorio" description={DESCRIPCION} path="/acerca/" jsonLd={jsonLdMigas(MIGAS)} />
+      <Seo title="Sobre nosotros" description={DESCRIPCION} path="/acerca/" jsonLd={jsonLdMigas(MIGAS)} />
       <Breadcrumbs migas={MIGAS} />
-      <h1 className="m-0 text-3xl md:text-4xl">Acerca del laboratorio</h1>
+      <h1 className="m-0 text-3xl md:text-4xl">Sobre nosotros</h1>
+      <p className="mt-2 mb-0 max-w-[65ch] text-lg text-text-muted">
+        Laboratorio de Nutrición Animal · Universidad Nacional de Colombia, Sede Palmira
+      </p>
 
       <div className="mt-8 grid gap-10 lg:grid-cols-[minmax(0,1fr)_340px]">
         <div className="flex min-w-0 flex-col gap-10">
